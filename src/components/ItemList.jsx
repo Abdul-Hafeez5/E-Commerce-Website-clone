@@ -7,22 +7,21 @@ import { FiUser } from "react-icons/fi";
 const ItemList = () => {
   return (
     <div className="flex gap-x-3 ">
-      <p className="flex gap-x-1 ">
+      <p className="xl:flex gap-x-1 hidden ">
         <TfiReload className="w-6 h-6 " />
-       <span>compare
-        </span> 
+        <span>compare</span>
       </p>
       <p className="flex gap-x-1">
-        <IoIosHeartEmpty className="w-6 h-6" />
-        wishList
+        <IoIosHeartEmpty className="w-6 h-6 lg:hidden" />
+        <span className="xl:flex hidden">wishList</span>
       </p>
       <p className="flex gap-x-1">
-        <BsCart className="w-6 h-6" />
-        Cart
+        <BsCart className="w-6 h-6 lg:hidden" />
+        <span className="xl:flex hidden">Cart</span>
       </p>
-      <p className="flex gap-x-1">
+      <p className="xl:flex gap-x-1 hidden">
         <FiUser className="w-6 h-6" />
-        Account
+        <span>Account</span>
       </p>
     </div>
   );
