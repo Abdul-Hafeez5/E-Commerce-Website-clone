@@ -8,13 +8,11 @@ import Navbar from "./containers/Navbar";
 // import Banner from "./components/Banner";
 function App() {
   return (
-    <div >
+    <div>
       <Navbar />
       <HeroSec />
-      {/* <div className="flex my-6 ">
-        <Categories/>
-      </div>
-      <div className="flex gap-x-6">
+      {/* <div className="flex my-6 "><Categories/></div> */}
+      {/* <div className="flex gap-x-6">
         <Banner
           title={"Everyday Fresh and clean with our Products"}
           img={banner1}
