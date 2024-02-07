@@ -2,9 +2,7 @@ import "./App.css";
 // import Categories from "./containers/Categories";
 import HeroSec from "./components/HeroSec";
 import Navbar from "./containers/Navbar";
-// import { banner1,
-//   banner2,
-//   banner3,} from "./assets"
+
 // import Banner from "./components/Banner";
 function App() {
   return (
