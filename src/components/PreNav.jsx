@@ -3,7 +3,7 @@ import React from "react";
 const PreNav = () => {
   const element = ["About Us", "My Accout", "WishList", "Order Tracking"];
   return (
-    <div className=" hidden lg:flex justify-between font-Lato text-sm py-2">
+    <div className=" hidden lg:flex justify-between font-Lato text-sm py-3 px-12">
       <div className="flex">
         {element.map((item, index) => (
           <p key={index}>
