@@ -1,5 +1,5 @@
 import "./App.css";
-// import Categories from "./containers/Categories";
+import Categories from "./containers/Categories";
 import HeroSec from "./components/HeroSec";
 import Navbar from "./containers/Navbar";
 
@@ -9,7 +9,9 @@ function App() {
     <div>
       <Navbar />
       <HeroSec />
-      {/* <div className="flex my-6 "><Categories/></div> */}
+      <div className="mx-10 my-6 ">
+        <Categories />
+      </div>
       {/* <div className="flex gap-x-6">
         <Banner
           title={"Everyday Fresh and clean with our Products"}
