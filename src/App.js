@@ -2,11 +2,12 @@ import Categories from "./containers/Categories";
 import HeroSec from "./components/HeroSec";
 import Navbar from "./containers/Navbar";
 import Banners from "./containers/Banners";
+import Header from "./containers/Header";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Header />
       {/* <HeroSec /> */}
       {/* <div className="mx-10 my-6 ">
         <Categories />
