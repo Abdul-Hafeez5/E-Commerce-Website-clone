@@ -8,13 +8,8 @@ function App() {
     <div>
       <Header />
       <HeroSec />
-      {/* <div className="mx-10 my-6 ">
-        <Categories />
-      </div>
-      <div>
-        <Banners />
-        hello
-      </div> */}
+      <Categories />
+      {/* <Banners /> */}
     </div>
   );
 }

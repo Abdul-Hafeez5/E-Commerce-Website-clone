@@ -23,6 +23,7 @@ const HeroSec = () => {
                 <FiSend />
                 <input
                   type="text"
+                  placeholder="Your email address"
                   className="mr-2 border-none font-lato text-[#7E7E7E]  xs:p-3 "
                 />
                 <button className="bg-[#3bb77e] font-quickSand font-semibold hover:bg-[#47c98c] rounded-3xl py-3 px-2 xs:px-6 text-white">
@@ -46,6 +47,7 @@ const HeroSec = () => {
                 <input
                   type="text"
                   className="mr-2 border-none font-lato text-[#7E7E7E]  xs:p-3 "
+                  placeholder="Your email address"
                 />
                 <button className="bg-[#3bb77e] font-quickSand font-semibold hover:bg-[#47c98c] rounded-3xl py-3 px-2 xs:px-6 text-white">
                   Subscribe

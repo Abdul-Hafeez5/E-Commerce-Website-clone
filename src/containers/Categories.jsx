@@ -15,13 +15,15 @@ import Category from "../components/Category";
 
 const Categories = () => {
   return (
-    <>
-      <div className="flex items-baseline gap-x-10">
-        <h1 className="my-6 text-5xl">Featured Categories</h1>
-        <p className="hover:text-[#3bb77e]">Cake and Milk</p>
-        <p className="hover:text-[#3bb77e]">Coffes & Teas</p>
-        <p className="hover:text-[#3bb77e]">Pet food</p>
-        <p className="hover:text-[#3bb77e]">Vegetables</p>
+    <div className="mx-6 my-6 font-quickSand lg:mx-12">
+      <div className="items-baseline lg:flex ">
+        <h1 className="mb-6 text-3xl font-bold lg:px-6">Featured Categories</h1>
+        <div className="flex mb-6 text-base font-bold gap-x-10">
+          <p className="hover:text-[#3bb77e] cursor-pointer">Cake and Milk</p>
+          <p className="hover:text-[#3bb77e] cursor-pointer">Coffes & Teas</p>
+          <p className="hover:text-[#3bb77e] cursor-pointer">Pet food</p>
+          <p className="hover:text-[#3bb77e] cursor-pointer">Vegetables</p>
+        </div>
       </div>
 
       <div className="flex">
@@ -34,8 +36,9 @@ const Categories = () => {
         <Category img={cat11} Name={"Strawberry"} items={17} />
         <Category img={cat12} Name={"Black Plum"} items={19} />
         <Category img={cat13} Name={"Custard apple"} items={18} />
+        <Category img={cat14} Name={"Custard apple"} items={18} />
       </div>
-    </>
+    </div>
   );
 };
 
