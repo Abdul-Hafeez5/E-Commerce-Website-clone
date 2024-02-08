@@ -9,7 +9,7 @@ import PostNav from "../components/PostNav";
 
 const Discount = () => {
   return (
-    <div className=" flex justify-center font-Lato text-sm text-white py-2 bg-[#3bb77e] sm:hidden">
+    <div className="justify-center flex font-lato text-sm text-white py-2 bg-[#3bb77e] xs:hidden md:block md:text-center lg:hidden">
       Grand opening, <span className="font-semibold">up to 15% </span> off all
       items. only <span className="font-semibold">3 days</span> left
     </div>
@@ -21,9 +21,9 @@ const Navbar = () => {
     <div>
       <Discount />
       <PreNav />
-      <div className="flex justify-between  py-5 px-12 sm:py-4 sm:px-4 sm:shadow-sm lg:mx-8 ">
+      {/* <div className="flex justify-between px-12 py-5 sm:py-4 sm:px-4 sm:shadow-sm lg:mx-8 ">
         <div className="sm:order-2 lg:hidden">
-          <IoMenuSharp className=" w-8 h-8 " />
+          <IoMenuSharp className="w-8 h-8 " />
         </div>
         <div className="sm:order-1">
           <img src={logo} alt="logo" className="w-36 " />
@@ -35,7 +35,7 @@ const Navbar = () => {
           <InputBox />
         </div>
       </div>
-      <PostNav />
+      <PostNav /> */}
     </div>
   );
 };
