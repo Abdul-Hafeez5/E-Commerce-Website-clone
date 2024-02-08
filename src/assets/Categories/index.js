@@ -7,6 +7,4 @@ export { default as cat9 } from "./cat-9.png";
 export { default as cat11 } from "./cat-11.png";
 export { default as cat12 } from "./cat-12.png";
 export { default as cat13 } from "./cat-13.png";
-export { default as banner1 } from "./banner-1.png";
-export { default as banner2 } from "./banner-2.png";
-export { default as banner3 } from "./banner-3.png";
+export { default as cat14 } from "./cat-14.png";

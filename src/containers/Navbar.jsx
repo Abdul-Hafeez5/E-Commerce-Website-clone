@@ -3,12 +3,12 @@ import { IoMenuSharp } from "react-icons/io5";
 import { PiCaretDown } from "react-icons/pi";
 import { CiSearch } from "react-icons/ci";
 
-import logo from "../assets/logo.svg";
+import { logo } from "../assets/Logo & raw/index";
 import NavItemList from "../components/NavItemList";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between px-2 py-5 sm:py-4 sm:px-4 sm:shadow-sm lg:mx-8 ">
+    <div className="flex items-center justify-between px-2 py-5 shadow-md sm:py-4 sm:px-4 lg:mx-8 ">
       <div className="sm:order-2 lg:hidden">
         <IoMenuSharp className="w-6 h-5 " />
       </div>

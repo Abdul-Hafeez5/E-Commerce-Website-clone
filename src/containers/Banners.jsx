@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
-import { banner1, banner2, banner3 } from "../assets/index";
+import { banner1, banner2, banner3 } from "../assets/Cards/index";
 
 const Banners = () => {
   return (

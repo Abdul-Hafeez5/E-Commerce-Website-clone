@@ -9,14 +9,15 @@ import {
   cat11,
   cat12,
   cat13,
-} from "../assets";
+  cat14,
+} from "../assets/Categories/index";
 import Category from "../components/Category";
 
 const Categories = () => {
   return (
     <>
       <div className="flex items-baseline gap-x-10">
-        <h1 className="text-5xl my-6">Featured Categories</h1>
+        <h1 className="my-6 text-5xl">Featured Categories</h1>
         <p className="hover:text-[#3bb77e]">Cake and Milk</p>
         <p className="hover:text-[#3bb77e]">Coffes & Teas</p>
         <p className="hover:text-[#3bb77e]">Pet food</p>

@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      {/* <HeroSec /> */}
+      <HeroSec />
       {/* <div className="mx-10 my-6 ">
         <Categories />
       </div>
