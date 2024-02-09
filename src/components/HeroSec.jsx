@@ -1,17 +1,32 @@
 import React from "react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+// import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { LiaLessThanSolid } from "react-icons/lia";
+import { LiaGreaterThanSolid } from "react-icons/lia";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import { FiSend } from "react-icons/fi";
 import "./herosec.css";
 const HeroSec = () => {
   return (
     <div className="mt-10 lg:px-10">
-      <Swiper navigation={true} modules={[Navigation]} className="">
+      <Swiper
+        navigation={{
+          prevEl: ".swiper-button-prev ",
+          nextEl: ".swiper-button-next",
+        }}
+        modules={[Navigation, Pagination]}
+        className=""
+        pagination={{ clickable: true }}
+      >
         <SwiperSlide>
           <div className="mx-6">
+            <div className="swiper-button-prev">
+              <LiaLessThanSolid className=" hover:text-gray-700" />
+            </div>
             <div className="py-16 background-container rounded-3xl lg:pl-20">
               <h1 className="pt-16 pl-8 text-3xl font-bold xs:text-[46px] xs:leading-[46px] xs:pr-64 sm:leading-[64px] lg:text-[64px] lg:pr-96 xl:text-[72px] font-quickSand ">
                 Fresh vegetables big discount
@@ -29,12 +44,18 @@ const HeroSec = () => {
                 <button className="bg-[#3bb77e] font-quickSand font-semibold hover:bg-[#47c98c] rounded-3xl py-3 px-2 xs:px-6 text-white">
                   Subscribe
                 </button>
+                <div className="swiper-button-next">
+                  <LiaGreaterThanSolid className="text-gray-500 cursor-pointer hover:text-gray-700" />
+                </div>
               </div>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="mx-6">
+            <div className="swiper-button-prev">
+              <LiaLessThanSolid className="w-10 h-10 text-black cursor-pointer hover:text-gray-700" />
+            </div>
             <div className="py-16 bg-container rounded-3xl lg:pl-20">
               <h1 className="pt-16 pl-8 text-3xl font-bold xs:text-[46px] xs:leading-[46px] xs:pr-64 sm:leading-[64px] lg:text-[64px] lg:pr-96 xl:text-[72px] font-quickSand ">
                 Fresh vegetables big discount
@@ -52,6 +73,9 @@ const HeroSec = () => {
                 <button className="bg-[#3bb77e] font-quickSand font-semibold hover:bg-[#47c98c] rounded-3xl py-3 px-2 xs:px-6 text-white">
                   Subscribe
                 </button>
+                <div className="swiper-button-next">
+                  <LiaGreaterThanSolid className="text-gray-500 cursor-pointer hover:text-gray-700" />
+                </div>
               </div>
             </div>
           </div>
