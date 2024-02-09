@@ -26,17 +26,52 @@ const Categories = () => {
         </div>
       </div>
 
-      <div className="flex overflow-x-hidden">
-        <Category img={cat1} Name={"Peach"} items={14} bgColor={"black"} />
-        <Category img={cat2} Name={"Cake and Milk"} items={12} />
-        <Category img={cat3} Name={"organic kiwi"} items={41} />
-        <Category img={cat4} Name={"Red Apple"} items={6} />
-        <Category img={cat5} Name={"Snack"} items={21} />
-        <Category img={cat9} Name={"Vegetables"} items={15} />
-        <Category img={cat11} Name={"Strawberry"} items={17} />
-        <Category img={cat12} Name={"Black Plum"} items={19} />
-        <Category img={cat13} Name={"Custard apple"} items={18} />
-        <Category img={cat14} Name={"Custard apple"} items={18} />
+      <div className="flex mb-8 overflow-x-hidden">
+        <Category img={cat1} Name={"Peach"} items={14} bgColor={"#f2fce4"} />
+        <Category
+          img={cat2}
+          Name={"Cake and Milk"}
+          items={12}
+          bgColor={"#fff3eb"}
+        />
+        <Category
+          img={cat3}
+          Name={"organic kiwi"}
+          items={41}
+          bgColor={"#f3e8e8"}
+        />
+        <Category img={cat4} Name={"Red Apple"} items={6} bgColor={"#f2fce4"} />
+        <Category img={cat5} Name={"Snack"} items={21} bgColor={"#fff3eb"} />
+        <Category
+          img={cat9}
+          Name={"Vegetables"}
+          items={15}
+          bgColor={"#f3e8e8"}
+        />
+        <Category
+          img={cat11}
+          Name={"Strawberry"}
+          items={17}
+          bgColor={"#f2fce4"}
+        />
+        <Category
+          img={cat12}
+          Name={"Black Plum"}
+          items={19}
+          bgColor={"#fff3eb"}
+        />
+        <Category
+          img={cat13}
+          Name={"Custard apple"}
+          items={18}
+          bgColor={"#f3e8e8"}
+        />
+        <Category
+          img={cat14}
+          Name={"Custard apple"}
+          items={18}
+          bgColor={"#f2fce4"}
+        />
       </div>
     </div>
   );
