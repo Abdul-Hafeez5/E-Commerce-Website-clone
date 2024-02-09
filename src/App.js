@@ -9,7 +9,7 @@ function App() {
       <Header />
       <HeroSec />
       <Categories />
-      {/* <Banners /> */}
+      <Banners />
     </div>
   );
 }

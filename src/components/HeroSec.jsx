@@ -20,11 +20,11 @@ const HeroSec = () => {
                 Sign up for daily newsLetter
               </p>
               <div className="inline-flex items-center mt-8 ml-2 bg-white xs:pl-4 xs:ml-8 rounded-3xl">
-                <FiSend />
+                <FiSend className="mx-2 sm:mr-4" />
                 <input
                   type="text"
                   placeholder="Your email address"
-                  className="mr-2 border-none font-lato text-[#7E7E7E]  xs:p-3 "
+                  className="mr-2 border-none font-lato text-[#7E7E7E]  xs:p-3 md:pr-4 "
                 />
                 <button className="bg-[#3bb77e] font-quickSand font-semibold hover:bg-[#47c98c] rounded-3xl py-3 px-2 xs:px-6 text-white">
                   Subscribe

@@ -10,7 +10,7 @@ const ItemList = () => {
       <div className="items-baseline hidden cursor-pointer xl:flex gap-x-1 ">
         <div className="inline-flex ">
           <TfiReload className="w-6 h-6 " />
-          <span className=" text-white rounded-full w-5 h-5 flex items-center justify-center text-[12px] bg-primary">
+          <span className=" text-white rounded-full relative -left-2  w-5 h-5 flex items-center justify-center text-[12px] bg-primary">
             6
           </span>
         </div>
@@ -19,7 +19,7 @@ const ItemList = () => {
       <div className="flex items-baseline cursor-pointer gap-x-1">
         <div className="inline-flex">
           <IoIosHeartEmpty className="w-6 h-6 lg:hidden xl:block" />
-          <span className=" text-white lg:hidden xl:flex rounded-full w-5 h-5 flex items-center justify-center text-[12px] bg-primary">
+          <span className=" text-white relative -left-2 lg:hidden xl:flex rounded-full w-5 h-5 flex items-center justify-center text-[12px] bg-primary">
             6
           </span>
         </div>
@@ -28,7 +28,7 @@ const ItemList = () => {
       <div className="flex items-baseline cursor-pointer gap-x-1">
         <div className="inline-flex">
           <BsCart className="w-6 h-6 lg:hidden xl:block" />
-          <span className=" text-white lg:hidden xl:flex rounded-full w-5 h-5 flex items-center justify-center text-[12px] bg-primary">
+          <span className=" text-white relative -left-2 lg:hidden xl:flex rounded-full w-5 h-5 flex items-center justify-center text-[12px] bg-primary">
             6
           </span>
         </div>
