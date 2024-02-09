@@ -1,0 +1,17 @@
+
+.swiper-button-prev {
+    background-color: white; /* Customize button color */
+    /* Add additional styles as needed */
+  }
+  
+  .swiper-button-next {
+    background-color: white; /* Customize button color */
+    /* Add additional styles as needed */
+  }
+  .swiper-button-prev::before {
+    content: url('path/to/your/prev-icon.svg'); /* Replace with your custom icon */
+  }
+  
+  .swiper-button-next::before {
+    content: url('path/to/your/next-icon.svg'); /* Replace with your custom icon */
+  }
