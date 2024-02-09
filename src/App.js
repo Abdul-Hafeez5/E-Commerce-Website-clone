@@ -1,13 +1,13 @@
 import Categories from "./containers/Categories";
-import HeroSec from "./components/HeroSec";
 import Banners from "./containers/Banners";
 import Header from "./containers/Header";
+import HeroSlider from "./components/sliders/HeroSlider";
 
 function App() {
   return (
     <div>
       <Header />
-      <HeroSec />
+      <HeroSlider />
       <Categories />
       <Banners />
     </div>
