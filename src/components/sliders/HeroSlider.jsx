@@ -8,7 +8,7 @@ import { LiaLessThanSolid } from "react-icons/lia";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { slider_1, slider_2 } from "../../assets/HeroSlider/index";
 import HeroSec from "../HeroSec";
-// import "./HeroSlider.css"
+
 const HeroSlider = () => {
   const prevButtonRef = useRef(null);
   const nextButtonRef = useRef(null);

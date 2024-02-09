@@ -27,7 +27,7 @@ const Categories = () => {
       </div>
 
       <div className="flex overflow-x-hidden">
-        <Category img={cat1} Name={"Peach"} items={14} />
+        <Category img={cat1} Name={"Peach"} items={14} bgColor={"black"} />
         <Category img={cat2} Name={"Cake and Milk"} items={12} />
         <Category img={cat3} Name={"organic kiwi"} items={41} />
         <Category img={cat4} Name={"Red Apple"} items={6} />
