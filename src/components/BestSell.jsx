@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCart } from "react-icons/bs";
 
-const Product = ({
+const BestSell = ({
   sale,
   img,
   hovImg,
@@ -44,4 +44,4 @@ const Product = ({
   );
 };
 
-export default Product;
+export default BestSell;
