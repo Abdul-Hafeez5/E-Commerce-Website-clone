@@ -30,7 +30,7 @@ const HeroSlider = () => {
           nextEl: nextButtonRef.current,
         }}
         modules={[Navigation, Pagination, Autoplay]}
-        // autoplay={{ delay: 5000 }}
+        autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
       >
         <SwiperSlide>

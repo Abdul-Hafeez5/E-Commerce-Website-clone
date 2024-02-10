@@ -1,6 +1,8 @@
 import React from "react";
 import Deal from "../components/Deal";
 import { LiaGreaterThanSolid } from "react-icons/lia";
+import { banner5, banner6, banner7, banner8 } from "../assets/Deals/index";
+let bgImages = [banner5, banner6, banner7, banner8];
 
 const Deals = () => {
   return (
@@ -14,8 +16,10 @@ const Deals = () => {
           <LiaGreaterThanSolid className="cursor-pointer" />
         </div>
       </div>
-      <div>
-        <Deal />
+      <div className="flex gap-x-8">
+        {bgImages.map((img, index) => (
+          <Deal key={index} bgImage={img} />
+        ))}
       </div>
     </div>
   );

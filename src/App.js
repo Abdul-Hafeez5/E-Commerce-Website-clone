@@ -5,6 +5,7 @@ import HeroSlider from "./components/sliders/HeroSlider";
 import Products from "./containers/Products";
 import BestSells from "./containers/BestSells";
 import Deals from "./containers/Deals";
+import VegetableCard from "./components/VegetableCard";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Banners />
       <Products />
       <BestSells />
-      <Deals/>
+      <Deals />
+      <VegetableCard />
     </div>
   );
 }
