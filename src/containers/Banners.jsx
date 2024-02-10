@@ -4,7 +4,7 @@ import { banner1, banner2, banner3 } from "../assets/Cards/index";
 
 const Banners = () => {
   return (
-    <div className="block mx-6 md:flex gap-x-6 lg:mx-6">
+    <div className="block mx-6 md:flex gap-x-6 lg:mx-8">
       <Banner
         title={"Everyday Fresh and clean with our Products"}
         img={banner1}

@@ -15,7 +15,7 @@ import Category from "../components/Category";
 
 const Categories = () => {
   return (
-    <div className="mx-6 my-6 font-quickSand lg:mx-12">
+    <div className="mx-6 my-6 font-quickSand lg:mx-6">
       <div className="items-baseline lg:flex ">
         <h1 className="mb-6 text-3xl font-bold lg:px-6">Featured Categories</h1>
         <div className="flex mb-6 text-base font-bold gap-x-10">
