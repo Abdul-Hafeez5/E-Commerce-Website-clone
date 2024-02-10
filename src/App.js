@@ -9,7 +9,7 @@ function App() {
       <Header />
       <HeroSlider />
       <Categories />
-      {/* <Banners /> */}
+      <Banners />
     </div>
   );
 }
