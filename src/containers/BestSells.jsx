@@ -137,7 +137,7 @@ const BestSells = () => {
         <h1 className="mb-2 font-bold text-[28px] lg:text-[32px]">
           Daily Best Sells
         </h1>
-        <div className="flex items-center text-sm font-semibold just gap-x-6 lg:text-base lg:mx-20 ">
+        <div className="flex items-center text-sm font-semibold gap-x-6 lg:text-base lg:mx-20 ">
           <p>Featured</p>
           <p>Popular</p>
           <p>New added</p>
@@ -153,7 +153,7 @@ const BestSells = () => {
           </h1>
           <Button />
         </div>
-        <div className="inline-flex ">
+        <div className="inline-flex gap-x-8">
           {BestSellsProduct.map((item, index) => (
             <Product
               key={index}
