@@ -12,19 +12,22 @@ const Product = ({
   discount,
 }) => {
   return (
-    <div className="flex flex-col border max-w-72 rounded-3xl">
+    <div className="flex flex-col border max-w-72 rounded-3xl hover:border-primary">
       <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-br-3xl">
         {sale}
       </h1>
-      <div className="justify-center w-60 h-60 xl:w-64 xl:h-64">
+      <div className="justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64">
         <img src={img} alt="products" />
       </div>
       <div className="mx-8 my-8 ">
-        <span className="font-lato text-secondary  text-[12px]">{type}</span>
-        <h1 className="my-2 text-base font-bold font-quickSand">{heading}</h1>
+        <span className="text-xs font-lato text-secondary">{type}</span>
+        <h1 className="my-2 text-base font-bold cursor-pointer hover:text-primary font-quickSand">
+          {heading}
+        </h1>
         <p>star and rating</p>
         <p className="text-sm font-lato text-secondary">
-          By <span className=" text-primary">{seller}</span>
+          By{" "}
+          <span className=" text-primary hover:text-yellow-300">{seller}</span>
         </p>
         <div className="flex items-center justify-between mt-3 ">
           <div className="font-bold font-quickSand">
@@ -34,7 +37,7 @@ const Product = ({
               <span className="absolute left-0 w-9 bottom-2 h-[1.5px] bg-secondary"></span>
             </p>
           </div>
-          <div className="flex px-4 py-2  items-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato">
+          <div className="flex px-4 py-2  items-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato hover:text-white hover:bg-primary">
             <BsCart className="w-4 h-4" />
             <button>Add</button>
           </div>

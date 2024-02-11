@@ -3,8 +3,8 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Button = () => {
   return (
-    <div className="inline-flex items-center sm:justify-center gap-x-2 py-2 xs:px-4 text-white bg-[#3bb77e] rounded-md">
-      <button className="xs:font-bold text-[12px]">Shop Now</button>
+    <div className="inline-flex items-center justify-center px-4 py-2 text-white rounded-md hover:bg-yellow-300 hover:mx-4 gap-x-2 bg-primary">
+      <button className="text-xs font-bold">Shop Now</button>
       <FaArrowRight />
     </div>
   );

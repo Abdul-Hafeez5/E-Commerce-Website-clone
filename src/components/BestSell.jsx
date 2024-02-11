@@ -20,7 +20,7 @@ const BestSell = ({
         <img src={img} alt="products" />
       </div>
       <div className="mx-8 my-8 ">
-        <span className="font-lato text-secondary  text-[12px]">{type}</span>
+        <span className="text-xs font-lato text-secondary">{type}</span>
         <h1 className="my-2 text-base font-bold font-quickSand">{heading}</h1>
         <p>star and rating</p>
         <p className="text-sm font-lato text-secondary">

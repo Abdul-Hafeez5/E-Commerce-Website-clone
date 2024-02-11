@@ -13,6 +13,18 @@ import {
 } from "../assets/Categories/index";
 import Category from "../components/Category";
 
+let CategoryList = [
+  { Name: "Peach", img: cat1, items: 14, bgColor: "#f2fce4" },
+  { Name: "Cake and Milk", img: cat2, items: 14, bgColor: "#fff3eb" },
+  { Name: "organic kiwi", img: cat3, items: 14, bgColor: "#f3e8e8" },
+  { Name: "Vegetables", img: cat4, items: 14, bgColor: "#f2fce4" },
+  { Name: "Strawberry", img: cat5, items: 14, bgColor: "#f2fce4" },
+  { Name: "Black Plum", img: cat9, items: 14, bgColor: "#f2fce4" },
+  { Name: "Custard apple", img: cat11, items: 14, bgColor: "#f2fce4" },
+  { Name: "Peach", img: cat12, items: 14, bgColor: "#f2fce4" },
+  { Name: "Peach", img: cat13, items: 14, bgColor: "#f2fce4" },
+  { Name: "Peach", img: cat14, items: 14, bgColor: "#f2fce4" },
+];
 const Categories = () => {
   return (
     <div className="mx-6 my-6 font-quickSand lg:mx-6">
@@ -27,51 +39,15 @@ const Categories = () => {
       </div>
 
       <div className="flex mb-8 overflow-x-hidden">
-        <Category img={cat1} Name={"Peach"} items={14} bgColor={"#f2fce4"} />
-        <Category
-          img={cat2}
-          Name={"Cake and Milk"}
-          items={12}
-          bgColor={"#fff3eb"}
-        />
-        <Category
-          img={cat3}
-          Name={"organic kiwi"}
-          items={41}
-          bgColor={"#f3e8e8"}
-        />
-        <Category img={cat4} Name={"Red Apple"} items={6} bgColor={"#f2fce4"} />
-        <Category img={cat5} Name={"Snack"} items={21} bgColor={"#fff3eb"} />
-        <Category
-          img={cat9}
-          Name={"Vegetables"}
-          items={15}
-          bgColor={"#f3e8e8"}
-        />
-        <Category
-          img={cat11}
-          Name={"Strawberry"}
-          items={17}
-          bgColor={"#f2fce4"}
-        />
-        <Category
-          img={cat12}
-          Name={"Black Plum"}
-          items={19}
-          bgColor={"#fff3eb"}
-        />
-        <Category
-          img={cat13}
-          Name={"Custard apple"}
-          items={18}
-          bgColor={"#f3e8e8"}
-        />
-        <Category
-          img={cat14}
-          Name={"Custard apple"}
-          items={18}
-          bgColor={"#f2fce4"}
-        />
+        {CategoryList.map((item, index) => (
+          <Category
+            key={index}
+            img={item.img}
+            Name={item.Name}
+            items={item.items}
+            bgColor={item.bgColor}
+          />
+        ))}
       </div>
     </div>
   );

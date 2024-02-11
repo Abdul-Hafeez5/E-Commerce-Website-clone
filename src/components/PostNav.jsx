@@ -74,7 +74,7 @@ const PostNav = () => {
         isNavFixed ? "fixed top-0 w-full" : ""
       }`}
     >
-      <div className="inline-flex items-center rounded-md px-2 py-2 gap-x-2 mx-3 text-white bg-[#3bb77e] cursor-pointer">
+      <div className="inline-flex items-center px-2 py-2 mx-3 text-white rounded-md cursor-pointer gap-x-2 bg-primary">
         <SiWindows />
         <p>Browse All Categories</p>
         <RxCaretDown />
@@ -82,9 +82,9 @@ const PostNav = () => {
 
       <div className="mr-3">
         <ul className="flex gap-x-6 xl:gap-x-8 ">
-          <li className="cursor-pointer hover:text-[#3bb77e]">Deals</li>
+          <li className="cursor-pointer hover:text-primary">Deals</li>
           <li
-            className=" flex items-center gap-x-2 cursor-pointer hover:text-[#3bb77e]"
+            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleHomeEnter}
             onMouseLeave={handleHomeLeave}
           >
@@ -105,9 +105,9 @@ const PostNav = () => {
               </div>
             )}
           </li>
-          <li className="cursor-pointer hover:text-[#3bb77e]">About</li>
+          <li className="cursor-pointer hover:text-primary">About</li>
           <li
-            className="flex items-center gap-x-2 cursor-pointer hover:text-[#3bb77e]"
+            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleShopEnter}
             onMouseLeave={handleShopLeave}
           >
@@ -128,7 +128,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center gap-x-2 cursor-pointer hover:text-[#3bb77e]"
+            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleVendorEnter}
             onMouseLeave={handleVendorLeave}
           >
@@ -149,7 +149,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center gap-x-2 cursor-pointer hover:text-[#3bb77e]"
+            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleMegaMenuEnter}
             onMouseLeave={handleMegaMenuLeave}
           >
@@ -170,7 +170,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center gap-x-2 cursor-pointer hover:text-[#3bb77e]"
+            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleBlogEnter}
             onMouseLeave={handleBlogLeave}
           >
@@ -191,7 +191,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center gap-x-2 cursor-pointer hover:text-[#3bb77e]"
+            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handlePagesEnter}
             onMouseLeave={handlePagesLeave}
           >
@@ -211,14 +211,14 @@ const PostNav = () => {
               </div>
             )}
           </li>
-          <li className="cursor-pointer hover:text-[#3bb77e]">Contact</li>
+          <li className="cursor-pointer hover:text-primary">Contact</li>
         </ul>
       </div>
       <div className="items-center hidden xl:flex gap-x-3">
         <LuHeadphones className="w-12 h-12" />
         <div>
-          <p className="font-bold text-2xl text-[#3bb77e]">1900 - 888</p>
-          <span className="text-[11px] text-[#7E7E7E] font-[500]">
+          <p className="text-2xl font-bold text-primary">1900 - 888</p>
+          <span className="text-[11px] text-secondary font-[500] ">
             24/7 Support Center
           </span>
         </div>

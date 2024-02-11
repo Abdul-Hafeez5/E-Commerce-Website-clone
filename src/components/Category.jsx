@@ -8,10 +8,10 @@ const Category = ({ img, Name, items, bgColor }) => {
     >
       <img src={img} alt="" className="cursor-pointer" />
       <div className="flex flex-col items-center justify-center mb-3">
-        <h2 className="text-[253D4E] hover:text-primary font-semibold cursor-pointer">
+        <h2 className="font-semibold cursor-pointer hover:text-primary">
           {Name}
         </h2>
-        <span className="text-sm text-[#7E7E7E]">{items} items</span>
+        <span className="text-sm text-secondary">{items} items</span>
       </div>
     </div>
   );

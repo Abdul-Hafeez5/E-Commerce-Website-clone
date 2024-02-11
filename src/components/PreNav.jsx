@@ -4,10 +4,10 @@ import { RxCaretDown } from "react-icons/rx";
 const PreNav = () => {
   const element = ["About Us", "My Accout", "WishList", "Order Tracking"];
   return (
-    <div className="hidden lg:flex justify-evenly font-lato text-[13px] text-[#7E7E7E] py-3">
+    <div className="hidden lg:flex justify-evenly font-lato text-[13px] text-secondary py-3">
       <div className="flex ml-5">
         {element.map((item, index) => (
-          <p key={index} className="cursor-pointer hover:text-[#585757]">
+          <p key={index} className="cursor-pointer hover:text-secondary">
             {item}
             <span className="mx-2 cursor-none ">|</span>
           </p>

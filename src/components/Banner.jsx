@@ -8,9 +8,9 @@ const Banner = ({ title, img }) => {
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="ml-8">
-        <h1 className="text-[18px] font-bold mb-5">{title}</h1>
-        <div className="inline-flex items-center sm:justify-center gap-x-2 py-2 xs:px-4 text-white bg-[#3bb77e] rounded-md">
-          <button className="xs:font-bold text-[12px]">Shop Now</button>
+        <h1 className="text-[18px]  font-bold mb-5">{title}</h1>
+        <div className="inline-flex items-center py-2 text-white rounded-md sm:justify-center gap-x-2 xs:px-4 bg-primary">
+          <button className="text-xs xs:font-bold">Shop Now</button>
           <FaArrowRight />
         </div>
       </div>
