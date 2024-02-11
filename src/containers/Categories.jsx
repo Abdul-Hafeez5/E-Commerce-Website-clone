@@ -40,7 +40,7 @@ const Categories = () => {
         </div>
       </div>
 
-      <div className="flex mb-8 overflow-x-hidden">
+      <div className="flex mb-8 overflow-x-hidden ">
         {CategoryList.map((item, index) => (
           <Category
             key={index}
@@ -48,6 +48,7 @@ const Categories = () => {
             Name={item.Name}
             items={item.items}
             bgColor={item.bgColor}
+            
           />
         ))}
       </div>
