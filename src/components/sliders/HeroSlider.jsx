@@ -4,24 +4,34 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { LiaLessThanSolid } from "react-icons/lia";
-import { LiaGreaterThanSolid } from "react-icons/lia";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+
 import { slider_1, slider_2 } from "../../assets/HeroSlider/index";
 import HeroSec from "../HeroSec";
+
+let HeroContent = [
+  {
+    img: slider_1,
+    heading: "Don't miss amazing grocerry deals",
+    subHeading: "sign up for daily newsletter",
+  },
+  {
+    img: slider_2,
+    heading: "Fresh vegetables Big discounts",
+    subHeading: "Save up to 50% off on your first order",
+  },
+];
 
 const HeroSlider = () => {
   const prevButtonRef = useRef(null);
   const nextButtonRef = useRef(null);
   return (
     <div className="relative">
-      <div className="ml-6 top-2/3 swiper-button-prev" ref={prevButtonRef}>
-        <LiaLessThanSolid />
+      <div className=" swiper-button-prev" ref={prevButtonRef}>
+        <BsChevronLeft />
       </div>
-      <div
-        className="absolute mr-6 transform -translate-y-1/2 top-1/2 right-4 swiper-button-next"
-        ref={nextButtonRef}
-      >
-        <LiaGreaterThanSolid />
+      <div className=" swiper-button-next" ref={nextButtonRef}>
+        <BsChevronRight />
       </div>
       <Swiper
         className="mt-10 lg:px-10"
@@ -33,20 +43,15 @@ const HeroSlider = () => {
         autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
       >
-        <SwiperSlide>
-          <HeroSec
-            img={slider_1}
-            heading={"Don't miss amazing grocerry deals"}
-            subHeading={"sign up for daily newsletter"}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <HeroSec
-            img={slider_2}
-            heading={"Fresh vegetables Big discounts"}
-            subHeading={"Save up to 50% off on your first order"}
-          />
-        </SwiperSlide>
+        {HeroContent.map((item, index) => (
+          <SwiperSlide key={index}>
+            <HeroSec
+              img={item.img}
+              heading={item.heading}
+              subHeading={item.subHeading}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

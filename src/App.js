@@ -14,10 +14,10 @@ function App() {
       <HeroSlider />
       <Categories />
       <Banners />
-      <Products />
-      <BestSells />
-      <Deals />
-      <VegetableCard />
+      {/* <Products /> */}
+      {/* <BestSells /> */}
+      {/* <Deals /> */}
+      {/* <VegetableCard /> */}
     </div>
   );
 }

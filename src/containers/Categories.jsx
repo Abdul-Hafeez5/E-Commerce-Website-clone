@@ -28,9 +28,11 @@ let CategoryList = [
 const Categories = () => {
   return (
     <div className="mx-6 my-6 font-quickSand lg:mx-6">
-      <div className="items-baseline lg:flex ">
-        <h1 className="mb-6 text-3xl font-bold lg:px-6">Featured Categories</h1>
-        <div className="flex mb-6 text-base font-bold gap-x-10">
+      <div className="items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
+        <h1 className="mb-6 text-[28px] font-bold lg:px-6 lg:text-[32px]">
+          Featured Categories
+        </h1>
+        <div className="flex flex-wrap mb-6 text-sm font-semibold lg:text-base xs:block md:flex gap-x-6">
           <p className="hover:text-[#3bb77e] cursor-pointer">Cake and Milk</p>
           <p className="hover:text-[#3bb77e] cursor-pointer">Coffes & Teas</p>
           <p className="hover:text-[#3bb77e] cursor-pointer">Pet food</p>
