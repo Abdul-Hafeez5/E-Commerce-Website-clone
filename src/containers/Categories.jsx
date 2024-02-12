@@ -1,4 +1,10 @@
 import React from "react";
+import SwiperCore from "swiper";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
+import "swiper/swiper-bundle.css";
 import {
   cat1,
   cat2,
@@ -25,10 +31,12 @@ let CategoryList = [
   { Name: "Peach", img: cat13, items: 14, bgColor: "#f2fce4" },
   { Name: "Peach", img: cat14, items: 14, bgColor: "#f2fce4" },
 ];
+
+SwiperCore.use([Navigation]);
 const Categories = () => {
   return (
     <div className="mx-6 my-6 font-quickSand lg:mx-6">
-      <div className="items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
+      <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline">
         <h1 className="mb-6 text-[28px] font-bold lg:px-6 lg:text-[32px]">
           Featured Categories
         </h1>
@@ -38,19 +46,53 @@ const Categories = () => {
           <p className="hover:text-[#3bb77e] cursor-pointer">Pet food</p>
           <p className="hover:text-[#3bb77e] cursor-pointer">Vegetables</p>
         </div>
+        <div className="">
+          <div className="absolute z-10 p-2 bg-gray-200 rounded-full shadow-md swiper-button-prev top-1/2 right-14">
+            <FaArrowLeft className="w-6 h-6 text-gray-600" />
+          </div>
+          <div className="absolute z-10 p-2 bg-gray-200 rounded-full shadow-md swiper-button-next top-1/2 right-14">
+            <FaArrowRight className="w-6 h-6 text-gray-600" />
+          </div>
+        </div>
       </div>
 
-      <div className="flex mb-8 overflow-x-hidden ">
-        {CategoryList.map((item, index) => (
-          <Category
-            key={index}
-            img={item.img}
-            Name={item.Name}
-            items={item.items}
-            bgColor={item.bgColor}
-            
-          />
-        ))}
+      <div className="flex w-full h-full overflow-x-hidden ">
+        <Swiper
+          loop
+          slidesPerView={2}
+          spaceBetween={30}
+          breakpoints={{
+            480: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 4,
+            },
+            1024: {
+              slidesPerView: 8,
+            },
+            1208: {
+              slidesPerView: 10,
+            },
+          }}
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
+          className="swiper-wrapper"
+        >
+          {CategoryList.map((item, index) => (
+            <SwiperSlide key={index}>
+              <Category
+                className={"mb-8"}
+                img={item.img}
+                Name={item.Name}
+                items={item.items}
+                bgColor={item.bgColor}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );

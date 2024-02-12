@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { BsCart } from "react-icons/bs";
+import { IoEyeOutline } from "react-icons/io5";
+import { MdCompareArrows } from "react-icons/md";
 import { IoIosHeartEmpty } from "react-icons/io";
 
 const Product = ({
@@ -34,21 +36,21 @@ const Product = ({
       <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-tl-3xl rounded-br-3xl">
         {sale}
       </h1>
-      <div className="relative justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64">
+      <div className="relative justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64 group">
         <img src={hovered ? hovImg : img} alt="products" className="" />
         {showIcons && (
-          <div className="absolute flex items-center transform -translate-x-1/2 -translate-y-1/2 border border-primary top-1/2 left-1/2">
-            <div className="bg-white ">
-              <BsCart className="w-4 h-4 text-primary" />
-              <p className="text-xs text-primary">Add</p>
+          <div className="absolute inset-0 flex items-center justify-center transition duration-300 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 ease top-1/2 left-1/2">
+            <div className="p-2 bg-white">
+              <IoIosHeartEmpty className="w-5 h-5 text-primary hover:text-yellow-400" />
+              {/* <p className="text-xs text-primary">Add</p> */}
             </div>
-            <div className="bg-white ">
-              <IoIosHeartEmpty className="w-4 h-4 text-primary" />
-              <p className="text-xs text-primary">Wishlist</p>
+            <div className="p-2 bg-white">
+              <MdCompareArrows className="w-5 h-5 text-primary hover:text-yellow-400" />
+              {/* <p className="text-xs text-primary">Wishlist</p> */}
             </div>
-            <div className="bg-white ">
-              <IoIosHeartEmpty className="w-4 h-4 text-primary" />
-              <p className="text-xs text-primary">Chat</p>
+            <div className="p-2 bg-white">
+              <IoEyeOutline className="w-5 h-5 text-primary hover:text-yellow-400" />
+              {/* <p className="text-xs text-primary">Chat</p> */}
             </div>
           </div>
         )}

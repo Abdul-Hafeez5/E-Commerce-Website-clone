@@ -3,7 +3,7 @@ import React from "react";
 const Category = ({ img, Name, items, bgColor }) => {
   return (
     <div
-      className={`min-w-32 h-full flex flex-col items-center hover:border border-primary  rounded-md mx-2 mt-3 `}
+      className={`min-w-32 h-full flex flex-col items-center hover:border border-primary  rounded-md mx-2  mt-3 `}
       style={{ backgroundColor: bgColor }}
     >
       <img
