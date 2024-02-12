@@ -143,7 +143,7 @@ const Products = () => {
           <p>Fruits</p>
         </div>
       </div>
-      <div className="flex mx-6 gap-x-6">
+      <div className="flex flex-col mx-6 gap-x-6">
         {productList.map((item, index) => (
           <Product
             key={index}

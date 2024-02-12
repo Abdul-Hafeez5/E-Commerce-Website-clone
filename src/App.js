@@ -6,6 +6,8 @@ import Products from "./containers/Products";
 import BestSells from "./containers/BestSells";
 import Deals from "./containers/Deals";
 import VegetableGrid from "./containers/VegetableGrid";
+import HeroSec from "./components/HeroSec";
+import { banner9 } from "./assets/Deals/index";
 
 function App() {
   return (
@@ -18,6 +20,11 @@ function App() {
       <BestSells />
       <Deals />
       <VegetableGrid />
+      <HeroSec
+        heading={"Stay home & get your daily needs from our shop"}
+        subHeading={"Start You'r Daily Shopping with Nest Mart"}
+        img={banner9}
+      />
     </div>
   );
 }
