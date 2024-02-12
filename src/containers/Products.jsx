@@ -133,7 +133,7 @@ const Products = () => {
         <h1 className="mb-2 font-bold text-[28px] lg:text-[32px]">
           Popular products
         </h1>
-        <div className="flex items-center text-sm font-semibold just gap-x-6 lg:text-base lg:mx-20 ">
+        <div className="flex flex-wrap items-center text-sm font-semibold just gap-x-6 lg:text-base lg:mx-20 ">
           <p>All</p>
           <p>Milks & Dairies</p>
           <p>Coffes & Teas</p>

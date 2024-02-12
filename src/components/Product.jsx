@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsCart } from "react-icons/bs";
+import { IoIosHeartEmpty } from "react-icons/io";
 
 const Product = ({
   sale,
@@ -11,13 +12,46 @@ const Product = ({
   price,
   discount,
 }) => {
+  const [hovered, setHovered] = useState(false);
+  const [showIcons, setShowIcons] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+    setShowIcons(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+    setShowIcons(false);
+  };
+
   return (
-    <div className="flex flex-col border max-w-72 rounded-3xl hover:border-primary">
-      <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-br-3xl">
+    <div
+      className="flex flex-col border max-w-72 rounded-3xl hover:border-primary"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-tl-3xl rounded-br-3xl">
         {sale}
       </h1>
-      <div className="justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64">
-        <img src={img} alt="products" />
+      <div className="relative justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64">
+        <img src={hovered ? hovImg : img} alt="products" className="" />
+        {showIcons && (
+          <div className="absolute flex items-center transform -translate-x-1/2 -translate-y-1/2 border border-primary top-1/2 left-1/2">
+            <div className="bg-white ">
+              <BsCart className="w-4 h-4 text-primary" />
+              <p className="text-xs text-primary">Add</p>
+            </div>
+            <div className="bg-white ">
+              <IoIosHeartEmpty className="w-4 h-4 text-primary" />
+              <p className="text-xs text-primary">Wishlist</p>
+            </div>
+            <div className="bg-white ">
+              <IoIosHeartEmpty className="w-4 h-4 text-primary" />
+              <p className="text-xs text-primary">Chat</p>
+            </div>
+          </div>
+        )}
       </div>
       <div className="mx-8 my-8 ">
         <span className="text-xs font-lato text-secondary">{type}</span>

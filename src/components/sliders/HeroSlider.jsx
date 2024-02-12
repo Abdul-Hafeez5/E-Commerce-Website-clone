@@ -2,8 +2,15 @@ import React, { useRef } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+// import "./styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Autoplay,
+  Mousewheel,
+  Keyboard,
+} from "swiper/modules";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 import { slider_1, slider_2 } from "../../assets/HeroSlider/index";
@@ -34,14 +41,16 @@ const HeroSlider = () => {
         <BsChevronRight />
       </div>
       <Swiper
-        className="mt-10 lg:px-10"
+        className="mt-10 lg:px-10 mySwiper"
         navigation={{
           prevEl: prevButtonRef.current,
           nextEl: nextButtonRef.current,
         }}
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay, Mousewheel, Keyboard]}
         autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
+        mousewheel={true}
+        keyboard={true}
       >
         {HeroContent.map((item, index) => (
           <SwiperSlide key={index}>
