@@ -29,7 +29,7 @@ const Product = ({
 
   return (
     <div
-      className="flex flex-col border max-w-72 rounded-3xl hover:border-primary"
+      className="box-border flex flex-col h-full border max-w-72 rounded-3xl hover:border-primary"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -37,7 +37,11 @@ const Product = ({
         {sale}
       </h1>
       <div className="relative justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64 group">
-        <img src={hovered ? hovImg : img} alt="products" className="" />
+        <img
+          src={hovered ? hovImg : img}
+          alt="products"
+          className="w-full h-full"
+        />
         {showIcons && (
           <div className="absolute inset-0 flex items-center justify-center transition duration-300 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 ease top-1/2 left-1/2">
             <div className="p-2 bg-white">
@@ -55,9 +59,9 @@ const Product = ({
           </div>
         )}
       </div>
-      <div className="mx-8 my-8 ">
+      <div className="mx-8 ">
         <span className="text-xs font-lato text-secondary">{type}</span>
-        <h1 className="my-2 text-base font-bold cursor-pointer hover:text-primary font-quickSand">
+        <h1 className="mb-2 text-base font-bold cursor-pointer hover:text-primary font-quickSand">
           {heading}
         </h1>
         <p>star and rating</p>
@@ -65,7 +69,7 @@ const Product = ({
           By{" "}
           <span className=" text-primary hover:text-yellow-300">{seller}</span>
         </p>
-        <div className="flex items-center justify-between mt-3 ">
+        <div className="flex items-center justify-between my-2 ">
           <div className="font-bold font-quickSand">
             <p className="text-[18px]  text-primary ">${price}</p>
             <p className="relative text-sm text-secondary">

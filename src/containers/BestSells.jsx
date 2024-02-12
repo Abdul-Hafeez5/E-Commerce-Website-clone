@@ -145,7 +145,7 @@ const BestSells = () => {
       </div>
       <div className="flex gap-x-6">
         <div
-          className="inline-flex flex-col items-center h-full py-20 bg-center bg-cover min-w-80 gap-y-12 rounded-2xl"
+          className="flex-col items-center hidden h-full py-24 bg-center bg-cover lg:inline-flex max-w-80 gap-y-12 rounded-2xl"
           style={{ backgroundImage: `url(${banner4})` }}
         >
           <h1 className="mt-12 font-bold text-[40px] mx-8 font-quickSand">
@@ -153,7 +153,7 @@ const BestSells = () => {
           </h1>
           <Button />
         </div>
-        <div className="inline-flex gap-x-8">
+        <div className="grid grid-cols-1 xs:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
           {BestSellsProduct.map((item, index) => (
             <Product
               key={index}
