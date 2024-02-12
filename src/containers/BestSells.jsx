@@ -1,8 +1,6 @@
 import React from "react";
-// import BestSell from "../components/BestSell";
 import Button from "../components/Button";
 import { banner4 } from "../assets/Deals/index";
-// import Product from "../components/Product";
 import {
   product_1_1,
   product_1_2,

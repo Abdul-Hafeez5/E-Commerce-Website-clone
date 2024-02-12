@@ -3,7 +3,7 @@ import { FiSend } from "react-icons/fi";
 
 const HeroSec = ({ img, heading, subHeading }) => {
   return (
-    <div className="mx-6">
+    <div className="mx-6 ">
       <div
         className="w-full h-full py-16 rounded-3xl lg:pl-20"
         style={{
