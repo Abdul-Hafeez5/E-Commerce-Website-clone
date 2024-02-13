@@ -16,7 +16,7 @@ const Deals = () => {
           <LiaGreaterThanSolid className="cursor-pointer" />
         </div>
       </div>
-      <div className="flex gap-x-8">
+      <div className="lg:flex gap-x-8">
         {bgImages.map((img, index) => (
           <Deal key={index} bgImage={img} />
         ))}

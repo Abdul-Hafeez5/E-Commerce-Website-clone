@@ -8,6 +8,7 @@ import Deals from "./containers/Deals";
 import VegetableGrid from "./containers/VegetableGrid";
 import HeroSec from "./components/HeroSec";
 import { banner9 } from "./assets/Deals/index";
+import QuickViews from "./containers/QuickViews";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         subHeading={"Start You'r Daily Shopping with Nest Mart"}
         img={banner9}
       />
+      <QuickViews />
     </div>
   );
 }
