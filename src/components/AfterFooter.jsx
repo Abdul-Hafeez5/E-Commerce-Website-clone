@@ -8,15 +8,15 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 const AfterFooter = () => {
   return (
-    <div className="flex items-center justify-between text-sm font-lato">
+    <div className="flex items-center justify-center text-sm md:justify-between font-lato">
       <div>
         <p>
-          © 2022, <span className="font-semibold text-primary">Nest </span>-
-          HTML Ecommerce Template
+          © 2024, <span className="font-semibold text-primary">Nest </span>- An
+          E-Commerce Clone
         </p>
         <p>All rights reserved</p>
       </div>
-      <div className="flex gap-x-20">
+      <div className="hidden xl:flex gap-x-20">
         <div className="flex gap-x-3">
           <LuPhoneCall className="items-center w-7 h-9 text-secondary " />
           <div>
@@ -36,7 +36,7 @@ const AfterFooter = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="hidden md:flex">
         <div className="flex items-center gap-x-4">
           <p className="text-base font-bold font-quickSand">Follow Us</p>
           <div className="flex gap-x-2">
@@ -45,11 +45,13 @@ const AfterFooter = () => {
             <FaInstagram className="p-2 text-white rounded-full bg-primary w-7 h-7" />
             <FaPinterestP className="p-2 text-white rounded-full bg-primary w-7 h-7" />
             <AiOutlineYoutube className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+            <div>
+              <p className="text-secondary">
+                Up to 15% discount on your first subscribe
+              </p>
+            </div>
           </div>
         </div>
-        <p className="text-secondary">
-          Up to 15% discount on your first subscribe
-        </p>
       </div>
     </div>
   );

@@ -28,26 +28,35 @@ const MainFooter = () => {
                 <span className="hidden font-bold lg:inline-block ">
                   Address:
                 </span>
-                5171 W Campbell Ave undefined Kent, Utah 53127 United States
+                Phase-I Qasimabad Hyderabad Sindh Pakistan
               </p>
             </div>
             <div className="flex items-center gap-x-2">
               <LiaHeadphonesAltSolid className="w-4 h-4 text-primary" />
               <p>
-                <span>Call Us:</span>(+91) - 540-025-124553
+                <span className="hidden font-bold lg:inline-block ">
+                  Call Us:
+                </span>
+                (+92) - 340-4035783
               </p>
             </div>
             <div className="flex items-center gap-x-2">
               <BsSend className="w-4 h-4 text-primary" />
 
               <p>
-                <span>Email:</span>sale@Nest.com
+                <span className="hidden font-bold lg:inline-block ">
+                  Email:
+                </span>
+                sale@Dummy.com
               </p>
             </div>
             <div className="flex items-center gap-x-2">
               <PiClockCountdownLight className="w-4 h-4 text-primary" />
               <p>
-                <span>Hours:</span>10:00 - 18:00, Mon - Sat
+                <span className="hidden font-bold lg:inline-block ">
+                  Hours:
+                </span>
+                10:00 - 18:00, Mon - Sat
               </p>
             </div>
           </div>
