@@ -1,9 +1,9 @@
 import React from "react";
 import { FiSend } from "react-icons/fi";
 
-const HeroSec = ({ img, heading, subHeading }) => {
+const HeroSec = ({ img, heading, subHeading, bg }) => {
   return (
-    <div className="mx-6 ">
+    <div className="mx-6 b " style={{backgroundColor: bg}}>
       <div
         className="w-full h-full py-16 rounded-3xl lg:pl-20"
         style={{
