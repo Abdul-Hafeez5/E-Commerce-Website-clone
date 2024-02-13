@@ -9,7 +9,6 @@ import VegetableGrid from "./containers/VegetableGrid";
 import HeroSec from "./components/HeroSec";
 import { banner9 } from "./assets/Deals/index";
 import QuickViews from "./containers/QuickViews";
-import MainFooter from "./components/MainFooter";
 import Footer from "./containers/Footer";
 
 function App() {

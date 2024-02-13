@@ -12,12 +12,12 @@ import {
 
 const MainFooter = () => {
   return (
-    <div className="font-lato">
+    <div className=" font-lato text-[15px]">
       <div className="flex justify-between ">
         <div>
           <div className="my-2">
             <img src={logo} alt="" />
-            <p className="my-4 text-[17px]">
+            <p className="my-6 text-[17px]">
               Awesome grocery store website template
             </p>
           </div>
@@ -53,7 +53,7 @@ const MainFooter = () => {
           </div>
         </div>
         <div className="flex flex-col gap-y-4">
-          <p>Company</p>
+          <p className="text-secondary">Company</p>
           <p>About Us</p>
           <p>Delivery Information</p>
           <p>Privacy Policy</p>
@@ -63,7 +63,7 @@ const MainFooter = () => {
           <p>Careers</p>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h1>Account</h1>
+          <h1 className="text-2xl font-bold font-quickSand">Account</h1>
           <p>Sign In</p>
           <p>View Cart</p>
           <p>My Wishlist</p>
@@ -73,7 +73,7 @@ const MainFooter = () => {
           <p>Compare products</p>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h1>Corporate</h1>
+          <h1 className="text-2xl font-bold font-quickSand">Corporate</h1>
           <p>Become a Vendor</p>
           <p>Affiliate Program</p>
           <p>Farm Business</p>
@@ -83,7 +83,7 @@ const MainFooter = () => {
           <p>Promotions</p>
         </div>
         <div className="flex flex-col gap-y-4">
-          <h1>Popular</h1>
+          <h1 className="text-2xl font-bold font-quickSand">Popular</h1>
           <p>Milk and Flavored Milk</p>
           <p>Butter and Margraine</p>
           <p>Eggs Substitutes</p>
@@ -93,18 +93,19 @@ const MainFooter = () => {
           <p>Cheese</p>
         </div>
       </div>
-      <div>
-        <h1>Install App</h1>
+      <div className="flex flex-col gap-y-3">
+        <h1 className="text-2xl font-bold font-quickSand">Install App</h1>
         <p>From App Store or Google Play</p>
-        <div className="inline-flex gap-x-4 ">
+        <div className="inline-flex my-4 gap-x-4 ">
           <img src={app_store} alt="" className="w-32 h-10" />
           <img src={google_play} alt="" className="w-32 h-10" />
         </div>
         <div>
-          <p>Secured Payment Gateways</p>
+          <p className="mb-4">Secured Payment Gateways</p>
           <img src={payment_method} alt="" />
         </div>
       </div>
+      <hr className="my-16 bg-primary" />
     </div>
   );
 };
