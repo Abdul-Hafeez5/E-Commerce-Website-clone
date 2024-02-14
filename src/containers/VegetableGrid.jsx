@@ -91,12 +91,6 @@ let FruitArray = [
 ];
 
 const VegetableGrid = () => {
-  // const titles = [
-  //     { text: "Rank", colSpan: 1 },
-  //     { text: "Rating", colSpan: 1 },
-  //     { text: "Name", colSpan: 2 },
-  //     { text: "Price", colSpan: 1 },
-  //   ];
   return (
     <div className="mx-8 my-8">
       <div className="flex flex-wrap justify-between mx-8 text-xl font-bold font-quickSand lg:text-2xl">

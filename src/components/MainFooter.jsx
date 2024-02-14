@@ -12,8 +12,8 @@ import {
 
 const MainFooter = () => {
   return (
-    <div className=" font-lato text-[15px]">
-      <div className="flex justify-between ">
+    <div className=" font-lato text-[15px] ">
+      <div className="grid justify-between mb-8 gap-y-8 xs:grid-cols-2 gap-x-8 lg:gap-x-16 lg:grid-cols-3 xl:grid-cols-5">
         <div>
           <div className="my-2">
             <img src={logo} alt="" />
