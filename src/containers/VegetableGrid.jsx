@@ -99,13 +99,13 @@ const VegetableGrid = () => {
   //   ];
   return (
     <div className="mx-8 my-8">
-      <div className="flex text-xl font-bold gap-x-8 font-quickSand lg:text-2xl">
+      <div className="flex flex-wrap justify-between mx-8 text-xl font-bold font-quickSand lg:text-2xl">
         <h1>Top Selling</h1>
-        <h1>Trending Products</h1>
-        <h1>Recently added</h1>
-        <h1>Top Rated</h1>
+        <h1 className="hidden md:inline-block">Trending Products</h1>
+        <h1 className="hidden lg:inline-block ">Recently added</h1>
+        <h1 className="hidden xl:inline-block">Top Rated</h1>
       </div>
-      <div className="grid grid-cols-2 mt-8 gap-y-3 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 mt-8 gap-y-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {FruitArray.map((item, index) => (
           <VegetableCard
             key={index}

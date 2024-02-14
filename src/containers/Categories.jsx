@@ -24,12 +24,12 @@ let CategoryList = [
   { Name: "Cake and Milk", img: cat2, items: 14, bgColor: "#fff3eb" },
   { Name: "organic kiwi", img: cat3, items: 14, bgColor: "#f3e8e8" },
   { Name: "Vegetables", img: cat4, items: 14, bgColor: "#f2fce4" },
-  { Name: "Strawberry", img: cat5, items: 14, bgColor: "#f2fce4" },
-  { Name: "Black Plum", img: cat9, items: 14, bgColor: "#f2fce4" },
+  { Name: "Strawberry", img: cat5, items: 14, bgColor: "#fff3eb" },
+  { Name: "Black Plum", img: cat9, items: 14, bgColor: "#f3e8e8" },
   { Name: "Custard apple", img: cat11, items: 14, bgColor: "#f2fce4" },
-  { Name: "Peach", img: cat12, items: 14, bgColor: "#f2fce4" },
+  { Name: "Peach", img: cat12, items: 14, bgColor: "#fff3eb" },
   { Name: "Peach", img: cat13, items: 14, bgColor: "#f2fce4" },
-  { Name: "Peach", img: cat14, items: 14, bgColor: "#f2fce4" },
+  { Name: "Peach", img: cat14, items: 14, bgColor: "#fff3eb" },
 ];
 
 SwiperCore.use([Navigation]);

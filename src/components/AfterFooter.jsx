@@ -39,12 +39,14 @@ const AfterFooter = () => {
       <div className="hidden md:flex">
         <div className="flex items-center gap-x-4">
           <p className="text-base font-bold font-quickSand">Follow Us</p>
-          <div className="flex gap-x-2">
-            <FaFacebookF className="p-2 text-white rounded-full bg-primary w-7 h-7" />
-            <FaTwitter className="p-2 text-white rounded-full bg-primary w-7 h-7" />
-            <FaInstagram className="p-2 text-white rounded-full bg-primary w-7 h-7" />
-            <FaPinterestP className="p-2 text-white rounded-full bg-primary w-7 h-7" />
-            <AiOutlineYoutube className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+          <div>
+            <div className="flex gap-x-2">
+              <FaFacebookF className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+              <FaTwitter className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+              <FaInstagram className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+              <FaPinterestP className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+              <AiOutlineYoutube className="p-2 text-white rounded-full bg-primary w-7 h-7" />
+            </div>
             <div>
               <p className="text-secondary">
                 Up to 15% discount on your first subscribe

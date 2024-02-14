@@ -151,7 +151,7 @@ const BestSells = () => {
           </h1>
           <Button />
         </div>
-        <div className="grid grid-cols-1 xs:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-4">
+        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-x-8 gap-y-4">
           {BestSellsProduct.map((item, index) => (
             <Product
               key={index}

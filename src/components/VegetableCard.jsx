@@ -2,8 +2,8 @@ import React from "react";
 
 const VegetableCard = ({ img, heading, price, discount }) => {
   return (
-    <div className="flex items-center">
-      <div className="w-full h-full cursor-pointer">
+    <div className="flex items-center xs:inline-block md:flex">
+      <div className="w-full h-full mb-4 cursor-pointer">
         <img src={img} alt="" className="rounded-xl" />
       </div>
       <div className="flex flex-col mx-6 font-quickSand">

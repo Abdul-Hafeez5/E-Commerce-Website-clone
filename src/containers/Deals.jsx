@@ -6,7 +6,7 @@ let bgImages = [banner5, banner6, banner7, banner8];
 
 const Deals = () => {
   return (
-    <div className="mx-6">
+    <div className="mx-6 ">
       <div className="flex items-center justify-between my-6 font-quickSand lg:flex mb-11">
         <h1 className="mb-2 font-bold text-[28px] xs:text-[32px]">
           Deals Of The Day
@@ -16,7 +16,7 @@ const Deals = () => {
           <LiaGreaterThanSolid className="cursor-pointer" />
         </div>
       </div>
-      <div className="lg:flex gap-x-8">
+      <div className="grid md:grid-cols-2 gap-y-6 lg:grid-cols-4 gap-x-8">
         {bgImages.map((img, index) => (
           <Deal key={index} bgImage={img} />
         ))}
