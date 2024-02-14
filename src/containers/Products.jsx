@@ -59,8 +59,7 @@ let productList = [
     discount: 52.8,
   },
   {
-    sale: "Hot",
-    saleBg: "#ac3ef5",
+    
     img: product_4_1,
     hovImg: product_4_2,
     type: "Vegetables",

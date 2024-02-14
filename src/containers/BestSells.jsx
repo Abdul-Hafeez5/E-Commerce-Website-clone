@@ -173,7 +173,7 @@ const BestSells = () => {
               seller={item.seller}
               price={item.price}
               discount={item.discount}
-              sellBg = {item.saleBg}
+              bgSale = {item.saleBg}
             />
           ))}
         </div>

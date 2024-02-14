@@ -84,7 +84,7 @@ const PostNav = () => {
         <ul className="flex gap-x-6 xl:gap-x-8 ">
           <li className="cursor-pointer hover:text-primary">Deals</li>
           <li
-            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
+            className="relative flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleHomeEnter}
             onMouseLeave={handleHomeLeave}
           >
@@ -93,7 +93,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isHomeOpen && (
-              <div className="absolute z-10 w-48 bg-white rounded-md shadow-lg top-44">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
                 <ul className="p-3 ">
                   <li>Welcome</li>
                   <li>Home</li>
@@ -107,7 +107,7 @@ const PostNav = () => {
           </li>
           <li className="cursor-pointer hover:text-primary">About</li>
           <li
-            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
+            className="relative flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleShopEnter}
             onMouseLeave={handleShopLeave}
           >
@@ -116,7 +116,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isShopOpen && (
-              <div className="absolute z-10 w-48 bg-white rounded-md shadow-lg top-44">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>
@@ -128,7 +128,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
+            className="relative flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleVendorEnter}
             onMouseLeave={handleVendorLeave}
           >
@@ -137,7 +137,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isVendorsOpen && (
-              <div className="absolute z-10 w-48 bg-white rounded-md shadow-lg top-44">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
                 <ul className="p-3 ">
                   <li>Vendor1</li>
                   <li>Vendor2</li>
@@ -149,7 +149,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
+            className="relative flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleMegaMenuEnter}
             onMouseLeave={handleMegaMenuLeave}
           >
@@ -158,7 +158,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isMegaMenuOpen && (
-              <div className="absolute z-10 w-48 bg-white rounded-md shadow-lg top-44">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>
@@ -170,7 +170,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
+            className="relative flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handleBlogEnter}
             onMouseLeave={handleBlogLeave}
           >
@@ -179,7 +179,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isBlogOpen && (
-              <div className="absolute z-10 w-48 bg-white rounded-md shadow-lg top-44">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>
@@ -191,7 +191,7 @@ const PostNav = () => {
             )}
           </li>
           <li
-            className="flex items-center cursor-pointer gap-x-2 hover:text-primary"
+            className="relative flex items-center cursor-pointer gap-x-2 hover:text-primary"
             onMouseEnter={handlePagesEnter}
             onMouseLeave={handlePagesLeave}
           >
@@ -200,7 +200,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isPagesOpen && (
-              <div className="absolute z-10 w-48 bg-white rounded-md shadow-lg top-44">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>

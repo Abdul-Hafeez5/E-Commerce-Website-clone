@@ -30,12 +30,12 @@ const Product = ({
 
   return (
     <div
-      className="box-border flex flex-col items-center w-full h-full border rounded-3xl hover:border-primary hover:shadow-xl"
+      className="box-border flex flex-col items-center w-full h-full border rounded-3xl hover:border-primary hover:shadow-lg"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <h1
-        className="w-16 px-4 py-2 self-start text-white font-lato text-[12px] bg-[#f74b81] rounded-tl-3xl rounded-br-3xl"
+        className="w-16 px-4 py-2 self-start text-white font-lato text-[12px] rounded-tl-3xl rounded-br-3xl"
         style={{ backgroundColor: bgSale }}
       >
         {sale}
