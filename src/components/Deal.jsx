@@ -5,10 +5,10 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
   return (
     <div className="relative mb-12">
       <div
-        className=" bg-center bg-cover min-h-80 rounded-2xl min-w-[340px]"
+        className="w-full bg-center bg-cover min-h-80 rounded-2xl"
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
-      <div className="absolute flex flex-col items-center mx-6 shadow-md top-1/3">
+      <div className="absolute flex flex-col items-center mx-6 shadow-lg top-1/3">
         <div className="flex my-6 gap-x-2 ">
           <div className="flex flex-col items-center justify-center px-3 py-1 bg-white rounded-xl">
             <p className="text-xl font-semibold font-quickSand text-primary">
@@ -35,7 +35,7 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
             <p className="text-base font-lato text-secondary">Seconds</p>
           </div>
         </div>
-        <div className="flex flex-col items-center py-4 bg-white rounded-lg">
+        <div className="flex flex-col items-center py-4 bg-white rounded-2xl">
           <h1 className="px-12 mx-auto font-bold cursor-pointer font-quickSand hover:text-primary">
             {heading}
           </h1>

@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-// import "./styles.css";
+import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -34,10 +34,10 @@ const HeroSlider = () => {
   const nextButtonRef = useRef(null);
   return (
     <div className="relative">
-      <div className=" swiper-button-prev" ref={prevButtonRef}>
+      <div className="absolute swiper-button-prev" ref={prevButtonRef}>
         <BsChevronLeft />
       </div>
-      <div className=" swiper-button-next" ref={nextButtonRef}>
+      <div className="absolute swiper-button-next" ref={nextButtonRef}>
         <BsChevronRight />
       </div>
       <Swiper
@@ -47,9 +47,9 @@ const HeroSlider = () => {
           nextEl: nextButtonRef.current,
         }}
         modules={[Navigation, Pagination, Autoplay, Mousewheel, Keyboard]}
-        autoplay={{ delay: 5000 }}
+        // autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
-        mousewheel={true}
+        // mousewheel={true}
         keyboard={true}
       >
         {HeroContent.map((item, index) => (

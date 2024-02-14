@@ -47,16 +47,16 @@ const Categories = () => {
           <p className="hover:text-[#3bb77e] cursor-pointer">Vegetables</p>
         </div>
         <div className="">
-          <div className="absolute z-10 p-2 bg-gray-200 rounded-full shadow-md swiper-button-prev top-1/2 right-14">
+          <div className="absolute z-10 p-2 rounded-full shadow-md swiper-button-prev top-1/2 left-32">
             <FaArrowLeft className="w-6 h-6 text-gray-600" />
           </div>
-          <div className="absolute z-10 p-2 bg-gray-200 rounded-full shadow-md swiper-button-next top-1/2 right-14">
+          <div className="absolute z-10 p-2 rounded-full swiper-button-next top-1/2 right-14">
             <FaArrowRight className="w-6 h-6 text-gray-600" />
           </div>
         </div>
       </div>
 
-      <div className="flex w-full h-full overflow-x-hidden ">
+      <div className="flex w-full h-full ">
         <Swiper
           loop
           slidesPerView={2}
@@ -72,7 +72,7 @@ const Categories = () => {
               slidesPerView: 8,
             },
             1208: {
-              slidesPerView: 10,
+              slidesPerView: 9,
             },
           }}
           navigation={{

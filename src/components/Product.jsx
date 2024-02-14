@@ -29,14 +29,14 @@ const Product = ({
 
   return (
     <div
-      className="box-border flex flex-col h-full border max-w-72 rounded-3xl hover:border-primary"
+      className="box-border flex flex-col w-full h-full border rounded-3xl hover:border-primary"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-tl-3xl rounded-br-3xl">
         {sale}
       </h1>
-      <div className="relative justify-center cursor-pointer w-60 h-60 xl:w-64 xl:h-64 group">
+      <div className="relative items-center justify-center cursor-pointer h-52 w-52 group">
         <img
           src={hovered ? hovImg : img}
           alt="products"

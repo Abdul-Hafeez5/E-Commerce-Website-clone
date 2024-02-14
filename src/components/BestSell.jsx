@@ -16,7 +16,7 @@ const BestSell = ({
       <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-br-3xl">
         {sale}
       </h1>
-      <div className="justify-center w-60 h-60 xl:w-64 xl:h-64">
+      <div className="justify-center w-52 h-52 xl:w-52 xl:h-52">
         <img src={img} alt="products" />
       </div>
       <div className="mx-8 my-8 ">

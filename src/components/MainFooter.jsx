@@ -23,7 +23,7 @@ const MainFooter = () => {
           </div>
           <div className="flex flex-col gap-y-2 text-[15px]">
             <div className="flex items-center justify-center gap-x-2">
-              <CiLocationOn className="w-4 h-4 text-primary" />
+              <CiLocationOn className="w-4 h-[17px] text-primary" />
               <p>
                 <span className="hidden font-bold lg:inline-block ">
                   Address:

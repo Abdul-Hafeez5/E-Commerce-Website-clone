@@ -9,4 +9,10 @@ body {
   margin: 0;
   padding: 0;
 }
+/* .swiper-button-prev {
+  @apply absolute top-0 flex items-center justify-center w-12 h-12 text-white bg-gray-400 rounded-full left-20;
+}
 
+.swiper-button-next {
+  @apply absolute top-0 flex items-center justify-center w-12 h-12 text-white bg-gray-400 rounded-full right-40;
+} */
