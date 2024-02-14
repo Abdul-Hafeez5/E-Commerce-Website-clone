@@ -63,51 +63,61 @@ const MainFooter = () => {
         </div>
         <div className="flex flex-col gap-y-4">
           <p className="text-secondary">Company</p>
-          <p>About Us</p>
-          <p>Delivery Information</p>
-          <p>Privacy Policy</p>
-          <p>Terms & Conditions</p>
-          <p>Contact Us</p>
-          <p>Support Center</p>
-          <p>Careers</p>
+          <p className="cursor-pointer hover:text-primary">About Us</p>
+          <p className="cursor-pointer hover:text-primary">
+            Delivery Information
+          </p>
+          <p className="cursor-pointer hover:text-primary">Privacy Policy</p>
+          <p className="cursor-pointer hover:text-primary">
+            Terms & Conditions
+          </p>
+          <p className="cursor-pointer hover:text-primary">Contact Us</p>
+          <p className="cursor-pointer hover:text-primary">Support Center</p>
+          <p className="cursor-pointer hover:text-primary">Careers</p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-bold font-quickSand">Account</h1>
-          <p>Sign In</p>
-          <p>View Cart</p>
-          <p>My Wishlist</p>
-          <p>Track My Order</p>
-          <p>Help Ticket</p>
-          <p>Shipping Details</p>
-          <p>Compare products</p>
+          <p className="cursor-pointer hover:text-primary">Sign In</p>
+          <p className="cursor-pointer hover:text-primary">View Cart</p>
+          <p className="cursor-pointer hover:text-primary">My Wishlist</p>
+          <p className="cursor-pointer hover:text-primary">Track My Order</p>
+          <p className="cursor-pointer hover:text-primary">Help Ticket</p>
+          <p className="cursor-pointer hover:text-primary">Shipping Details</p>
+          <p className="cursor-pointer hover:text-primary">Compare products</p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-bold font-quickSand">Corporate</h1>
-          <p>Become a Vendor</p>
-          <p>Affiliate Program</p>
-          <p>Farm Business</p>
-          <p>Farm Careers</p>
-          <p>Our Suppliers</p>
-          <p>Accessibility</p>
-          <p>Promotions</p>
+          <p className="cursor-pointer hover:text-primary">Become a Vendor</p>
+          <p className="cursor-pointer hover:text-primary">Affiliate Program</p>
+          <p className="cursor-pointer hover:text-primary">Farm Business</p>
+          <p className="cursor-pointer hover:text-primary">Farm Careers</p>
+          <p className="cursor-pointer hover:text-primary">Our Suppliers</p>
+          <p className="cursor-pointer hover:text-primary">Accessibility</p>
+          <p className="cursor-pointer hover:text-primary">Promotions</p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-bold font-quickSand">Popular</h1>
-          <p>Milk and Flavored Milk</p>
-          <p>Butter and Margraine</p>
-          <p>Eggs Substitutes</p>
-          <p>Marmalades</p>
-          <p>Sour Cream and Dips</p>
-          <p>Tea and Kombucha</p>
-          <p>Cheese</p>
+          <p className="cursor-pointer hover:text-primary">
+            Milk and Flavored Milk
+          </p>
+          <p className="cursor-pointer hover:text-primary">
+            Butter and Margraine
+          </p>
+          <p className="cursor-pointer hover:text-primary">Eggs Substitutes</p>
+          <p className="cursor-pointer hover:text-primary">Marmalades</p>
+          <p className="cursor-pointer hover:text-primary">
+            Sour Cream and Dips
+          </p>
+          <p className="cursor-pointer hover:text-primary">Tea and Kombucha</p>
+          <p className="cursor-pointer hover:text-primary">Cheese</p>
         </div>
       </div>
       <div className="flex flex-col gap-y-3">
         <h1 className="text-2xl font-bold font-quickSand">Install App</h1>
         <p>From App Store or Google Play</p>
         <div className="inline-flex my-4 gap-x-4 ">
-          <img src={app_store} alt="" className="w-32 h-10" />
-          <img src={google_play} alt="" className="w-32 h-10" />
+          <img src={app_store} alt="" className="w-32 h-10 cursor-pointer" />
+          <img src={google_play} alt="" className="w-32 h-10 cursor-pointer" />
         </div>
         <div>
           <p className="mb-4">Secured Payment Gateways</p>

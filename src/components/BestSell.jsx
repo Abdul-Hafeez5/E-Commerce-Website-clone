@@ -10,10 +10,14 @@ const BestSell = ({
   seller,
   price,
   discount,
+  sellBg,
 }) => {
   return (
     <div className="flex flex-col border max-w-72 rounded-3xl">
-      <h1 className="w-16 px-4 py-2 text-white font-lato text-[12px] bg-[#f74b81] rounded-br-3xl">
+      <h1
+        className="w-16 px-4 py-2 text-white font-lato text-[12px] rounded-br-3xl"
+        style={{ backgroundColor: sellBg }}
+      >
         {sale}
       </h1>
       <div className="justify-center w-52 h-52 xl:w-52 xl:h-52">

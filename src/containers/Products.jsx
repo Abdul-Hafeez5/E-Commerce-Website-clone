@@ -26,6 +26,8 @@ import {
 let productList = [
   {
     sale: "Hot",
+    saleBg: "#f59758",
+
     img: product_1_1,
     hovImg: product_1_2,
     type: "snack",
@@ -36,6 +38,7 @@ let productList = [
   },
   {
     sale: "sale",
+    saleBg: "#3bb77e",
     img: product_2_1,
     hovImg: product_2_2,
     type: "Hodo Foods",
@@ -46,6 +49,7 @@ let productList = [
   },
   {
     sale: "New",
+    saleBg: "#0066ff",
     img: product_3_1,
     hovImg: product_3_2,
     type: "snack",
@@ -56,6 +60,7 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#ac3ef5",
     img: product_4_1,
     hovImg: product_4_2,
     type: "Vegetables",
@@ -66,6 +71,7 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#f59758",
     img: product_5_1,
     hovImg: product_5_2,
     type: "snack",
@@ -76,6 +82,7 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#ac3ef5",
     img: product_6_1,
     hovImg: product_6_2,
     type: "snack",
@@ -86,6 +93,8 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#483285",
+
     img: product_7_1,
     hovImg: product_7_2,
     type: "snack",
@@ -96,6 +105,7 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#f59758",
     img: product_8_1,
     hovImg: product_8_2,
     type: "snack",
@@ -106,6 +116,7 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#483285",
     img: product_9_1,
     hovImg: product_9_2,
     type: "snack",
@@ -116,6 +127,7 @@ let productList = [
   },
   {
     sale: "Hot",
+    saleBg: "#f59758",
     img: product_10_1,
     hovImg: product_10_2,
     type: "snack",
@@ -155,6 +167,7 @@ const Products = () => {
             seller={item.seller}
             price={item.price}
             discount={item.discount}
+            bgSale={item.saleBg}
           />
         ))}
       </div>
