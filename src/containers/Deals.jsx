@@ -8,7 +8,7 @@ const Deals = () => {
   return (
     <div className="mx-6 ">
       <div className="flex items-center justify-between my-6 font-quickSand lg:flex mb-11">
-        <h1 className="mb-2 font-bold text-[28px] xs:text-[32px]">
+        <h1 className=" font-bold text-[28px] xs:text-[32px]">
           Deals Of The Day
         </h1>
         <div className="items-center hidden font-[400] font-lato text-secondary xs:flex gap-x-2">
@@ -18,7 +18,14 @@ const Deals = () => {
       </div>
       <div className="grid md:grid-cols-2 gap-y-6 lg:grid-cols-4 gap-x-8">
         {bgImages.map((img, index) => (
-          <Deal key={index} bgImage={img} />
+          <Deal
+            key={index}
+            bgImage={img}
+            heading={"Perdue Simply Smart Organics Gluten Free"}
+            price={24.85}
+            discount={26.8}
+            seller={"Old El Paso"}
+          />
         ))}
       </div>
     </div>
