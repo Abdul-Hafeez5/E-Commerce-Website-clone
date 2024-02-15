@@ -36,7 +36,7 @@ SwiperCore.use([Navigation]);
 const Categories = () => {
   return (
     <div className="mx-6 my-6 font-quickSand lg:mx-6">
-      <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline">
+      <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
         <h1 className="mb-6 text-[28px] font-bold lg:px-6 lg:text-[32px]">
           Featured Categories
         </h1>
@@ -46,12 +46,12 @@ const Categories = () => {
           <p className="hover:text-[#3bb77e] cursor-pointer">Pet food</p>
           <p className="hover:text-[#3bb77e] cursor-pointer">Vegetables</p>
         </div>
-        <div className="">
-          <div className="absolute z-10 p-2 rounded-full shadow-md swiper-button-prev top-1/2 left-32">
-            <FaArrowLeft className="w-6 h-6 text-gray-600" />
+        <div className="relative self-start">
+          <div className="absolute z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-1 cursor-pointer hover:bg-primary">
+            <FaArrowRight className="w-6 h-6" />
           </div>
-          <div className="absolute z-10 p-2 rounded-full swiper-button-next top-1/2 right-14">
-            <FaArrowRight className="w-6 h-6 text-gray-600" />
+          <div className="absolute text-secondary hover:text-white z-10 p-2 rounded-full bg-[#f2f3f4] right-16 cursor-pointer hover:bg-primary ">
+            <FaArrowLeft className="w-6 h-6 " />
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ const Categories = () => {
         <Swiper
           loop
           slidesPerView={2}
-          spaceBetween={30}
+          spaceBetween={0}
           breakpoints={{
             480: {
               slidesPerView: 3,

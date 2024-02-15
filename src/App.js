@@ -9,6 +9,7 @@ import VegetableGrid from "./containers/VegetableGrid";
 import QuickViews from "./containers/QuickViews";
 import Footer from "./containers/Footer";
 import LastHeroSec from "./containers/LastHeroSec";
+import ScrollToTopArrow from "./components/ScrollTopArrow";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <VegetableGrid />
       <LastHeroSec />
       <QuickViews />
+      <ScrollToTopArrow />
       <Footer />
     </div>
   );

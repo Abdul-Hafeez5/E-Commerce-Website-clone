@@ -23,7 +23,8 @@ import {
   product_10_1,
   product_10_2,
 } from "../assets/Products/index";
-import Product from "../components/Product";
+// import Product from "../components/Product";
+import BestSell from "../components/BestSell";
 
 let BestSellsProduct = [
   {
@@ -43,7 +44,7 @@ let BestSellsProduct = [
     img: product_2_1,
     hovImg: product_2_2,
     type: "Hodo Foods",
-    heading: "All Natural Italian-Style Chicken Meatballs",
+    heading: "All Natural Italian-Style Chicken Meatballs & Red Rice",
     seller: "Stouffer",
     price: 52.85,
     discount: 55.8,
@@ -161,9 +162,9 @@ const BestSells = () => {
           </h1>
           <Button />
         </div>
-        <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-x-8 gap-y-4">
+        <div className="grid grid-cols-1 overflow-hidden xs:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-x-8 gap-y-4">
           {BestSellsProduct.map((item, index) => (
-            <Product
+            <BestSell
               key={index}
               sale={item.sale}
               img={item.img}

@@ -76,9 +76,8 @@ const Product = ({
         <div className="flex items-center justify-between my-2 ">
           <div className="font-bold font-quickSand">
             <p className="text-[18px]  text-primary ">${price}</p>
-            <p className="relative text-sm text-secondary">
+            <p className="relative text-sm line-through text-secondary">
               ${discount}
-              <span className="absolute left-0 w-9 bottom-2 h-[1.5px] bg-secondary"></span>
             </p>
           </div>
           <div className="flex px-4 py-2  items-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato hover:text-white hover:bg-primary">

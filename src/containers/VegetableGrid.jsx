@@ -93,7 +93,7 @@ let FruitArray = [
 const VegetableGrid = () => {
   return (
     <div className="mx-8 my-8">
-      <div className="flex flex-wrap justify-between mx-8 text-xl font-bold font-quickSand lg:text-2xl">
+      <div className="flex flex-wrap justify-between mx-8 text-xl font-bold lg:mt-16 font-quickSand lg:text-2xl">
         <h1>Top Selling</h1>
         <h1 className="hidden md:inline-block">Trending Products</h1>
         <h1 className="hidden lg:inline-block ">Recently added</h1>
