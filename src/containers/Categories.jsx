@@ -1,10 +1,9 @@
-import React from "react";
-import SwiperCore from "swiper";
-import { Navigation } from "swiper/modules";
+import React, { useRef, useEffect } from "react";
+import "swiper/css";
+import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import "swiper/swiper-bundle.css";
 import {
   cat1,
   cat2,
@@ -32,8 +31,35 @@ let CategoryList = [
   { Name: "Peach", img: cat14, items: 14, bgColor: "#fff3eb" },
 ];
 
-SwiperCore.use([Navigation]);
 const Categories = () => {
+  const swiperRef = useRef(null);
+  useEffect(() => {
+    const swiperInstance = swiperRef.current.swiper;
+    if (swiperInstance) {
+      swiperInstance.on("slidePrevTransitionEnd", () => {
+        swiperInstance.allowSlidePrev = true;
+      });
+      swiperInstance.on("slideNextTransitionEnd", () => {
+        swiperInstance.allowSlideNext = true;
+      });
+    }
+  }, []);
+
+  const handlePrevClick = () => {
+    const swiperInstance = swiperRef.current.swiper;
+    if (swiperInstance && swiperInstance.allowSlidePrev) {
+      swiperInstance.slidePrev();
+      swiperInstance.allowSlidePrev = false;
+    }
+  };
+
+  const handleNextClick = () => {
+    const swiperInstance = swiperRef.current.swiper;
+    if (swiperInstance && swiperInstance.allowSlideNext) {
+      swiperInstance.slideNext();
+      swiperInstance.allowSlideNext = false;
+    }
+  };
   return (
     <div className="mx-6 my-6 font-quickSand lg:mx-6">
       <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
@@ -54,18 +80,19 @@ const Categories = () => {
             Vegetables
           </p>
         </div>
-        <div className="relative self-start">
+        <div className="relative self-start hidden md:block ">
           <div className="absolute z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-1 cursor-pointer hover:bg-primary">
-            <FaArrowRight className="w-6 h-6" />
+            <FaArrowRight className="w-6 h-6" onClick={handleNextClick} />
           </div>
           <div className="absolute text-secondary hover:text-white z-10 p-2 rounded-full bg-[#f2f3f4] right-16 cursor-pointer hover:bg-primary ">
-            <FaArrowLeft className="w-6 h-6 " />
+            <FaArrowLeft className="w-6 h-6 " onClick={handlePrevClick} />
           </div>
         </div>
       </div>
 
       <div className="flex w-full h-full ">
         <Swiper
+          ref={swiperRef}
           loop
           slidesPerView={2}
           spaceBetween={0}
@@ -82,10 +109,6 @@ const Categories = () => {
             1208: {
               slidesPerView: 9,
             },
-          }}
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
           }}
           className="swiper-wrapper"
         >

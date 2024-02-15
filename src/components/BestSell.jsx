@@ -10,7 +10,6 @@ const BestSell = ({
   hovImg,
   type,
   heading,
-  seller,
   price,
   discount,
   sellBg,
@@ -29,7 +28,7 @@ const BestSell = ({
   };
   return (
     <div
-      className="box-border flex flex-col items-center w-full h-full py-4 border rounded-3xl hover:border-primary hover:shadow-lg"
+      className="box-border flex flex-col items-center w-full h-full py-4 border lg:w-64 rounded-3xl hover:border-primary hover:shadow-lg"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
