@@ -80,7 +80,7 @@ const PostNav = () => {
         <RxCaretDown />
       </div>
 
-      <div className="mr-3">
+      <div className="flex-wrap mr-3">
         <ul className="flex gap-x-6 xl:gap-x-8 ">
           <li className="cursor-pointer hover:text-primary">Deals</li>
           <li
