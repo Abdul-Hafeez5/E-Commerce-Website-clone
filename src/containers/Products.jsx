@@ -49,7 +49,7 @@ let productList = [
   },
   {
     sale: "New",
-    saleBg: "#0066ff",
+    saleBg: "#f74b81",
     img: product_3_1,
     hovImg: product_3_2,
     type: "snack",
@@ -59,7 +59,6 @@ let productList = [
     discount: 52.8,
   },
   {
-    
     img: product_4_1,
     hovImg: product_4_2,
     type: "Vegetables",
@@ -92,7 +91,7 @@ let productList = [
   },
   {
     sale: "Hot",
-    saleBg: "#483285",
+    saleBg: "#f74b81",
 
     img: product_7_1,
     hovImg: product_7_2,
@@ -115,7 +114,7 @@ let productList = [
   },
   {
     sale: "Hot",
-    saleBg: "#483285",
+    saleBg: "#f74b81",
     img: product_9_1,
     hovImg: product_9_2,
     type: "snack",

@@ -50,7 +50,7 @@ let BestSellsProduct = [
   },
   {
     sale: "New",
-    saleBg: "#0066ff",
+    saleBg: "#f74b81",
     img: product_3_1,
     hovImg: product_3_2,
     type: "snack",
@@ -83,7 +83,7 @@ let BestSellsProduct = [
   },
   {
     sale: "Hot",
-    saleBg: "#ac3ef5",
+    saleBg: "#f74b81",
     img: product_6_1,
     hovImg: product_6_2,
     type: "snack",
@@ -94,7 +94,7 @@ let BestSellsProduct = [
   },
   {
     sale: "Hot",
-    saleBg: "#483285",
+    saleBg: "#3bb77e",
     img: product_7_1,
     hovImg: product_7_2,
     type: "snack",
@@ -105,7 +105,7 @@ let BestSellsProduct = [
   },
   {
     sale: "Hot",
-    saleBg: "#f59758",
+    saleBg: "#f74b81",
     img: product_8_1,
     hovImg: product_8_2,
     type: "snack",
@@ -116,7 +116,7 @@ let BestSellsProduct = [
   },
   {
     sale: "Hot",
-    saleBg: "#483285",
+    saleBg: "#3bb77e",
     img: product_9_1,
     hovImg: product_9_2,
     type: "snack",
@@ -173,7 +173,7 @@ const BestSells = () => {
               seller={item.seller}
               price={item.price}
               discount={item.discount}
-              bgSale = {item.saleBg}
+              bgSale={item.saleBg}
             />
           ))}
         </div>
