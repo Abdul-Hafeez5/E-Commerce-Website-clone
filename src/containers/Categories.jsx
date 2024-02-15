@@ -41,10 +41,18 @@ const Categories = () => {
           Featured Categories
         </h1>
         <div className="flex flex-wrap mb-6 text-sm font-semibold lg:text-base xs:block md:flex gap-x-6">
-          <p className="hover:text-[#3bb77e] cursor-pointer">Cake and Milk</p>
-          <p className="hover:text-[#3bb77e] cursor-pointer">Coffes & Teas</p>
-          <p className="hover:text-[#3bb77e] cursor-pointer">Pet food</p>
-          <p className="hover:text-[#3bb77e] cursor-pointer">Vegetables</p>
+          <p className="hover:text-[#3bb77e] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+            Cake and Milk
+          </p>
+          <p className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-[#3bb77e] cursor-pointer">
+            Coffes & Teas
+          </p>
+          <p className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 text-[#3bb77e] cursor-pointer">
+            Pet food
+          </p>
+          <p className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 hover:text-[#3bb77e] cursor-pointer">
+            Vegetables
+          </p>
         </div>
         <div className="relative self-start">
           <div className="absolute z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-1 cursor-pointer hover:bg-primary">

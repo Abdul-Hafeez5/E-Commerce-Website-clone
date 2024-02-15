@@ -38,8 +38,8 @@ const ScrollToTopArrow = () => {
         // >
         //   Scroll to Top
         // </button>
-        <div className="fixed p-2 border border-black rounded-full cursor-pointer bg-[#ffffff] bottom-10 right-10">
-          <GoArrowUp onClick={scrollToTop} className="w-5 h-5" />
+        <div className="fixed p-2 border border-black rounded-full animate-bounce hover:animate-none cursor-pointer bg-[#ffffff] bottom-10 right-10">
+          <GoArrowUp onClick={scrollToTop} className="w-5 h-5 " />
         </div>
       )}
     </div>

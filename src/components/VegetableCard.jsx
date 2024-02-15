@@ -4,9 +4,9 @@ const VegetableCard = ({ img, heading, price, discount }) => {
   return (
     <div className="flex items-center xs:block md:flex">
       <div className="mb-4 cursor-pointer md:w-28 md:h-28">
-        <img src={img} alt="" className="rounded-xl " />
+        <img src={img} alt="" className="w-full rounded-xl lg:w-20 lg:h-20" />
       </div>
-      <div className="mx-6 font-quickSand">
+      <div className="mx-4 font-quickSand">
         <h1 className="flex-wrap text-sm font-bold lg:text-base hover:text-primary">
           {heading}
         </h1>

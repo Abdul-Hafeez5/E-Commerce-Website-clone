@@ -9,19 +9,6 @@ let BannerDetails = [
 ];
 
 const Banners = () => {
-  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setScreenWidth(window.innerWidth);
-  //   };
-
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
-  // const shouldRenderThirdBanner = screenWidth >= 1024;
   return (
     <div className="grid grid-cols-1 mx-6 md:grid-cols-2 lg:grid-cols-3 gap-x-6 lg:mx-8">
       {BannerDetails.map((item, index) => (

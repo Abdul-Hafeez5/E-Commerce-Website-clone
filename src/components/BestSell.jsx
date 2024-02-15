@@ -69,13 +69,17 @@ const BestSell = ({
         </h1>
         <p>star and rating</p>
 
-        <div className="flex items-center justify-between my-3 ">
+        <div className="my-3">
           <div className="flex items-center font-bold font-quickSand gap-x-3">
             <p className="text-[18px]  text-primary ">${price}</p>
             <p className="relative text-sm line-through text-secondary">
               ${discount}
             </p>
           </div>
+          <div class="w-full bg-gray-200 rounded-full h-1.5 mt-4 dark:bg-gray-700">
+            <div class="bg-primary h-1.5 rounded-full w-[70%] "></div>
+          </div>
+          <p className="mt-1 text-[13px] font-lato">Sold:90/120</p>
         </div>
         <div className="flex px-4 py-2  items-center justify-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato hover:text-white hover:bg-primary">
           <BsCart className="w-4 h-4" />

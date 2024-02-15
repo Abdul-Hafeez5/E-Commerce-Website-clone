@@ -11,8 +11,8 @@ const Deals = () => {
         <h1 className=" font-bold text-[28px] xs:text-[32px]">
           Deals Of The Day
         </h1>
-        <div className="items-center hidden font-[400] font-lato text-secondary xs:flex gap-x-2">
-          <p className="">All deals</p>
+        <div className="items-center hidden font-[400] font-lato text-secondary cursor-pointer hover:text-primary xs:flex gap-x-2">
+          <p className="">All Deals</p>
           <LiaGreaterThanSolid className="cursor-pointer" />
         </div>
       </div>

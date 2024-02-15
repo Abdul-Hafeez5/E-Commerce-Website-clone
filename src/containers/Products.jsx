@@ -144,13 +144,27 @@ const Products = () => {
           Popular products
         </h1>
         <div className="flex flex-wrap items-center text-sm font-semibold just gap-x-6 lg:text-base lg:mx-20 ">
-          <p>All</p>
-          <p>Milks & Dairies</p>
-          <p>Coffes & Teas</p>
-          <p>Pet Foods</p>
-          <p>Meats</p>
-          <p>Vegetables</p>
-          <p>Fruits</p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 text-primary">
+            All
+          </p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">
+            Milks & Dairies
+          </p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">
+            Coffes & Teas
+          </p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">
+            Pet Foods
+          </p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">
+            Meats
+          </p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">
+            Vegetables
+          </p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">
+            Fruits
+          </p>
         </div>
       </div>
       <div className="grid grid-cols-1 mx-6 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6">

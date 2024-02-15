@@ -30,7 +30,7 @@ const Product = ({
 
   return (
     <div
-      className="box-border flex flex-col items-center w-full h-full border rounded-3xl hover:border-primary hover:shadow-lg"
+      className="box-border flex flex-col items-center w-full h-full border rounded-3xl hover:border-primary hover:shadow-md"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -80,6 +80,7 @@ const Product = ({
               ${discount}
             </p>
           </div>
+
           <div className="flex px-4 py-2  items-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato hover:text-white hover:bg-primary">
             <BsCart className="w-4 h-4" />
             <button>Add</button>

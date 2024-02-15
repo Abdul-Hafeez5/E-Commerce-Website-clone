@@ -3,13 +3,13 @@ import React from "react";
 const Category = ({ img, Name, items, bgColor }) => {
   return (
     <div
-      className={`min-w-32 h-full flex flex-col items-center hover:border border-primary  rounded-md mx-2  mt-3 `}
+      className={`min-w-32 h-full flex flex-col items-center hover:border border-primary  rounded-md mx-2  my-3 `}
       style={{ backgroundColor: bgColor }}
     >
       <img
         src={img}
         alt=""
-        className="transition duration-300 transform cursor-pointer hover:scale-110 "
+        className="transition duration-500 transform cursor-pointer scale-[0.8] hover:scale-[0.9] "
       />
       <div className="flex flex-col items-center justify-center mb-3">
         <h2 className="font-semibold cursor-pointer hover:text-primary">

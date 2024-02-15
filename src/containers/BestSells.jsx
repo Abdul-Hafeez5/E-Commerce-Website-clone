@@ -147,9 +147,9 @@ const BestSells = () => {
           Daily Best Sells
         </h1>
         <div className="flex items-center text-sm font-semibold gap-x-6 lg:text-base lg:mx-20 ">
-          <p>Featured</p>
-          <p>Popular</p>
-          <p>New added</p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 text-primary">Featured</p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">Popular</p>
+          <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 hover:text-primary">New added</p>
         </div>
       </div>
       <div className="flex gap-x-6">
