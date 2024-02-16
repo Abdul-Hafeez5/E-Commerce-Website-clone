@@ -8,7 +8,7 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
         className="w-full bg-center bg-cover min-h-80 rounded-2xl"
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
-      <div className="absolute flex flex-col items-center mx-6 top-1/3">
+      <div className="absolute flex flex-col items-center justify-center mx-6 top-1/3">
         <div className="flex my-6 gap-x-2 ">
           <div className="flex flex-col items-center justify-center px-3 py-1 bg-white rounded-xl">
             <p className="text-xl font-semibold font-quickSand text-primary">
@@ -35,7 +35,7 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
             <p className="text-base font-lato text-secondary">Seconds</p>
           </div>
         </div>
-        <div className="flex flex-col items-center py-4 bg-white shadow-lg rounded-2xl">
+        <div className="flex flex-col items-center justify-center py-4 bg-white shadow-lg rounded-2xl">
           <h1 className="px-12 mx-auto font-bold leading-5 cursor-pointer font-quickSand hover:text-primary">
             {heading}
           </h1>

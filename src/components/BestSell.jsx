@@ -13,7 +13,7 @@ const BestSell = ({
   heading,
   price,
   discount,
-  sellBg,
+  bgSale,
 }) => {
   const [hovered, setHovered] = useState(false);
   const [showIcons, setShowIcons] = useState(false);
@@ -30,21 +30,21 @@ const BestSell = ({
   };
   return (
     <div
-      className="box-border flex flex-col items-center w-full h-full py-4 border lg:w-64 rounded-3xl hover:border-primary hover:shadow-lg"
+      className="box-border flex flex-col items-center w-full h-full border xs:w-60 lg:w-64 rounded-3xl hover:border-primary hover:shadow-lg"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <h1
         className="w-16 px-4 py-2 self-start text-white font-lato text-[12px] rounded-tl-3xl rounded-br-3xl"
-        style={{ backgroundColor: sellBg }}
+        style={{ backgroundColor: bgSale }}
       >
         {sale}
       </h1>
-      <div className="relative flex items-center justify-center cursor-pointer h-52 w-52 group">
+      <div className="relative flex items-center justify-center w-48 h-48 cursor-pointer group">
         <img
           src={hovered ? hovImg : img}
           alt="products"
-          className="w-full h-full"
+          className="w-48 h-48"
         />
         {showIcons && (
           <div className="absolute inset-0 flex items-center justify-center transition duration-300 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 ease top-1/2 left-1/2">
@@ -63,7 +63,7 @@ const BestSell = ({
           </div>
         )}
       </div>
-      <div className="mx-8 ">
+      <div className="mx-4">
         <span className="text-xs font-lato text-secondary">{type}</span>
         <h1 className="text-base font-bold leading-5 cursor-pointer hover:text-primary font-quickSand">
           {heading}
@@ -90,7 +90,7 @@ const BestSell = ({
           </div>
           <p className="mt-1 text-[13px] font-lato">Sold:90/120</p>
         </div>
-        <div className="flex px-4 py-2  items-center justify-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato hover:text-white hover:bg-primary">
+        <div className="flex px-4 py-2 my-6  items-center justify-center text-sm font-bold rounded-md cursor-pointer bg-[#c0fadf] gap-x-2 text-primary font-lato hover:text-white hover:bg-primary">
           <BsCart className="w-4 h-4" />
           <button>Add</button>
         </div>

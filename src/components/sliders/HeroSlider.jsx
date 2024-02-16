@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -26,6 +26,23 @@ let HeroContent = [
 
 const HeroSlider = () => {
   const swiperRef = useRef(null);
+  const [hideArrows, setHideArrows] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!hideArrows && window.scrollY > 350) {
+        setHideArrows(true);
+      } else if (hideArrows && window.scrollY === 0) {
+        setHideArrows(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [hideArrows]);
 
   useEffect(() => {
     const swiperInstance = swiperRef.current.swiper;
@@ -58,14 +75,18 @@ const HeroSlider = () => {
   const isSmallScreen = useMediaQuery({ minWidth: 768 });
   return (
     <div className="relative ">
-      {isSmallScreen && (
+      {!hideArrows && (
         <>
-          <div className="absolute z-10 flex items-center justify-center p-2 rounded-full cursor-pointer text-slate-700 bg-slate-200 left-16 top-1/2 hover:bg-primary hover:text-white">
-            <BsChevronLeft className="w-5 h-5" onClick={handlePrevClick} />
-          </div>
-          <div className="absolute z-10 flex items-center justify-center p-2 rounded-full cursor-pointer text-slate-700 hover:text-white bg-slate-200 right-16 top-1/2 hover:bg-primary">
-            <BsChevronRight className="w-5 h-5" onClick={handleNextClick} />
-          </div>
+          {isSmallScreen && (
+            <>
+              <div className="absolute z-10 flex items-center justify-center p-2 rounded-full cursor-pointer text-slate-700 bg-slate-200 left-16 top-1/2 hover:bg-primary hover:text-white">
+                <BsChevronLeft className="w-5 h-5" onClick={handlePrevClick} />
+              </div>
+              <div className="absolute z-10 flex items-center justify-center p-2 rounded-full cursor-pointer text-slate-700 hover:text-white bg-slate-200 right-16 top-1/2 hover:bg-primary">
+                <BsChevronRight className="w-5 h-5" onClick={handleNextClick} />
+              </div>
+            </>
+          )}
         </>
       )}
       <Swiper
