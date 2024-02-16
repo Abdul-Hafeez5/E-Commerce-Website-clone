@@ -8,31 +8,31 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
         className="w-full bg-center bg-cover min-h-80 rounded-2xl"
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
-      <div className="absolute flex flex-col items-center justify-center mx-6 top-1/3">
-        <div className="flex my-6 gap-x-2 ">
-          <div className="flex flex-col items-center justify-center px-3 py-1 bg-white rounded-xl">
+      <div className="absolute flex flex-col items-center justify-center mx-2 xs:mx-6 w-[95%] top-1/3">
+        <div className="flex my-6 xs:gap-x-2 gap-x-1">
+          <div className="flex flex-col items-center justify-center px-1 py-1 bg-white rounded-md xs:px-3">
             <p className="text-xl font-semibold font-quickSand text-primary">
               800
             </p>
             <p className="text-base font-lato text-secondary">Days</p>
           </div>
-          <div className="px-3 py-1 bg-white rounded-xl">
+          <div className="px-1 py-1 bg-white rounded-md xs:px-3">
             <p className="text-xl font-semibold font-quickSand text-primary">
               11
             </p>
             <p className="text-base font-lato text-secondary">Hours</p>
           </div>
-          <div className="px-1 py-1 bg-white rounded-xl">
+          <div className="px-1 py-1 bg-white rounded-md">
             <p className="text-xl font-semibold font-quickSand text-primary">
               51
             </p>
-            <p className="text-base font-lato text-secondary">Minutes</p>
+            <p className="text-base font-lato text-secondary">Mins</p>
           </div>
-          <div className="px-1 py-1 bg-white rounded-xl">
+          <div className="px-1 py-1 bg-white rounded-md">
             <p className="text-xl font-semibold font-quickSand text-primary">
               21
             </p>
-            <p className="text-base font-lato text-secondary">Seconds</p>
+            <p className="text-base font-lato text-secondary">Sec</p>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center py-4 bg-white shadow-lg rounded-2xl">
@@ -47,7 +47,7 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
             </span>
           </p>
           <div className="flex items-center justify-between my-2 ">
-            <div className="flex items-center font-bold gap-x-4 font-quickSand">
+            <div className="flex flex-col items-center font-bold xs:flex-row gap-x-4 font-quickSand">
               <p className="text-[18px]  text-primary ">${price}</p>
               <p className="relative text-sm text-secondary">
                 ${discount}

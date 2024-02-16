@@ -10,7 +10,7 @@ let BannerDetails = [
 
 const Banners = () => {
   return (
-    <div className="grid grid-cols-1 mx-6 md:grid-cols-2 lg:grid-cols-3 gap-x-6 lg:mx-8">
+    <div className="grid grid-cols-1 mx-2 gap-y-4 md:grid-cols-2 lg:grid-cols-3 gap-x-4 lg:mx-6">
       {BannerDetails.map((item, index) => (
         <Banner key={index} title={item.title} img={item.img} />
       ))}

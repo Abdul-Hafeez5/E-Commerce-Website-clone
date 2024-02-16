@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Banner = ({ title, img }) => {
   return (
     <div
-      className={`flex items-center justify-center font-QuickSand h-64 mb-8 bg-cover bg-center pr-32 rounded-lg xs:pr-40  sm:pr-60 md:pr-10 xl:pr-44`}
+      className={`flex items-center justify-center font-QuickSand h-full lg:h-64 mb-8 bg-cover bg-center pr-32 rounded-lg xs:pr-40  sm:pr-60 md:pr-10 xl:pr-44`}
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="mx-auto ml-8">
