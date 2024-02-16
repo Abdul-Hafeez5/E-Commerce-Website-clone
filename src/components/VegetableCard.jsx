@@ -4,12 +4,12 @@ import { Rating } from "primereact/rating";
 const VegetableCard = ({ img, heading, price, discount }) => {
   const [value, setValue] = useState(null);
   return (
-    <div className="w-[360px] h-[110px] overflow-hidden flex items-center  xs:block md:flex">
-      <div className="cursor-pointer md:w-[30%] md:h-[80%]">
+    <div className="flex items-center xs:block md:flex">
+      <div className="mb-4 cursor-pointer md:w-28 md:h-28">
         <img
           src={img}
           alt=""
-          className="object-cover  rounded-xl lg:w-[100%] lg:h-[100%]"
+          className="object-cover w-full rounded-xl lg:w-20 lg:h-20"
         />
       </div>
       <div className="mx-4 font-quickSand">

@@ -4,9 +4,9 @@ import { FiSend } from "react-icons/fi";
 
 const LastHeroSec = () => {
   return (
-    <div className="flex items-center justify-center  py-16 mx-8 my-6 bg-[#d8f1e5] rounded-3xl lg:pl-20 ">
+    <div className="flex items-center justify-center  mx-2 xs:mx-8 my-6 bg-[#d8f1e5] rounded-3xl lg:pl-20 ">
       <div className="">
-        <h1 className="pt-16 pl-2 text-[22px] font-bold xs:text-[40px] xs:leading-[46px]  font-quickSand ">
+        <h1 className="pt-16 xs:pl-2 text-[22px]   font-bold xs:text-[40px] xs:leading-[46px]  font-quickSand ">
           Stay home & get your daily needs from our shop
         </h1>
         <p className=" my-2 pl-4 text-sm font-lato text-secondary xs:my-5 xs:text-[18px]">

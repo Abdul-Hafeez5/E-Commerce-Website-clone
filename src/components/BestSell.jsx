@@ -30,7 +30,7 @@ const BestSell = ({
   };
   return (
     <div
-      className="box-border flex flex-col items-center w-full h-full border xs:w-60 lg:w-64 rounded-3xl hover:border-primary hover:shadow-lg"
+      className="box-border flex flex-col items-center w-full h-full border sm:w-[92%] md:w-[95%]  rounded-3xl hover:border-primary hover:shadow-lg"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -40,12 +40,8 @@ const BestSell = ({
       >
         {sale}
       </h1>
-      <div className="relative flex items-center justify-center w-48 h-48 cursor-pointer group">
-        <img
-          src={hovered ? hovImg : img}
-          alt="products"
-          className="w-48 h-48"
-        />
+      <div className="relative flex items-center justify-center  cursor-pointer sm:w-[89%] md:w-[92%] group">
+        <img src={hovered ? hovImg : img} alt="products" className="" />
         {showIcons && (
           <div className="absolute inset-0 flex items-center justify-center transition duration-300 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 ease top-1/2 left-1/2">
             <div className="p-2 bg-white">

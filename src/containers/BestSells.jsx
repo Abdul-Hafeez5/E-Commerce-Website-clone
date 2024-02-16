@@ -211,7 +211,7 @@ const BestSells = () => {
             <FaArrowLeft className="w-6 h-6 " onClick={handlePrevClick} />
           </div>
         </div>
-        <div className="flex w-full h-full overflow-hidden gap-x-0">
+        <div className="flex w-full h-full overflow-hidden ">
           <Swiper
             ref={swiperRef}
             modules={[Autoplay, Mousewheel, Keyboard]}
@@ -219,25 +219,20 @@ const BestSells = () => {
             keyboard={true}
             loop
             slidesPerView={1}
-            // spaceBetween={0}
+            spaceBetween={10}
             breakpoints={{
-              480: {
-                slidesPerView: 3,
+              540: {
+                slidesPerView: 2,
               },
               768: {
                 slidesPerView: 3,
               },
-              1024: {
-                slidesPerView: 4,
-              },
-              1208: {
-                slidesPerView: 4,
-              },
-              1480: {
+
+              1280: {
                 slidesPerView: 4,
               },
             }}
-            className="swiper-wrapper"
+            className=" swiper-wrapper"
           >
             {BestSellsProduct.map((item, index) => (
               <SwiperSlide key={index}>
