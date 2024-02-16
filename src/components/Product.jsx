@@ -3,6 +3,7 @@ import { BsCart } from "react-icons/bs";
 import { IoEyeOutline } from "react-icons/io5";
 import { MdCompareArrows } from "react-icons/md";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { Rating } from "primereact/rating";
 
 const Product = ({
   sale,
@@ -17,6 +18,7 @@ const Product = ({
 }) => {
   const [hovered, setHovered] = useState(false);
   const [showIcons, setShowIcons] = useState(false);
+  const [value, setValue] = useState(null);
 
   const handleMouseEnter = () => {
     setHovered(true);
@@ -35,7 +37,7 @@ const Product = ({
       onMouseLeave={handleMouseLeave}
     >
       <h1
-        className="w-16 px-4 py-2 self-start text-white font-lato text-[12px] rounded-tl-3xl rounded-br-3xl"
+        className="w-16 flex  py-2 self-start justify-center text-white font-lato text-[12px] rounded-tl-3xl rounded-br-3xl"
         style={{ backgroundColor: bgSale }}
       >
         {sale}
@@ -65,12 +67,20 @@ const Product = ({
       </div>
       <div className="mx-8 ">
         <span className="text-xs font-lato text-secondary">{type}</span>
-        <h1 className="mb-2 text-base font-bold cursor-pointer hover:text-primary font-quickSand">
+        <h1 className="mb-2 text-base font-bold leading-5 cursor-pointer hover:text-primary font-quickSand">
           {heading}
         </h1>
-        <p>star and rating</p>
+        <div className="flex mb-1 card gap-x-2">
+          <Rating
+            value={value}
+            onChange={(e) => setValue(e.value)}
+            cancel={false}
+            className="mx-1 text-yellow-300"
+          />
+          <span className="text-sm font-lato text-secondary">(3.5)</span>
+        </div>
         <p className="text-sm font-lato text-secondary">
-          By{" "}
+          By
           <span className=" text-primary hover:text-yellow-300">{seller}</span>
         </p>
         <div className="flex items-center justify-between my-2 ">

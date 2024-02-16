@@ -93,7 +93,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isHomeOpen && (
-              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-6">
                 <ul className="p-3 ">
                   <li>Welcome</li>
                   <li>Home</li>
@@ -116,7 +116,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isShopOpen && (
-              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-6">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>
@@ -137,7 +137,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isVendorsOpen && (
-              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-6">
                 <ul className="p-3 ">
                   <li>Vendor1</li>
                   <li>Vendor2</li>
@@ -158,7 +158,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isMegaMenuOpen && (
-              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-6">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>
@@ -179,7 +179,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isBlogOpen && (
-              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-6">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>
@@ -200,7 +200,7 @@ const PostNav = () => {
               <RxCaretDown />
             </span>
             {isPagesOpen && (
-              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-10">
+              <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg top-6">
                 <ul className="p-3 ">
                   <li>Shop1</li>
                   <li>Shop2</li>

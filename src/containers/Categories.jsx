@@ -61,12 +61,12 @@ const Categories = () => {
     }
   };
   return (
-    <div className="mx-6 my-6 font-quickSand lg:mx-6">
+    <div className="my-6 h-30 font-quickSand lg:mx-6">
       <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
         <h1 className="mb-6 text-[28px] font-bold lg:px-6 lg:text-[32px]">
           Featured Categories
         </h1>
-        <div className="flex flex-wrap mb-6 text-sm font-semibold lg:text-base xs:block md:flex gap-x-6">
+        <div className="flex flex-wrap flex-1 mb-6 text-sm font-semibold lg:text-base lg:self-baseline xs:block md:flex gap-x-6">
           <p className="hover:text-[#3bb77e] cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
             Cake and Milk
           </p>
@@ -107,13 +107,13 @@ const Categories = () => {
               slidesPerView: 8,
             },
             1208: {
-              slidesPerView: 9,
+              slidesPerView: 10,
             },
           }}
           className="swiper-wrapper"
         >
           {CategoryList.map((item, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide className="h-24" key={index}>
               <Category
                 className={"mb-8"}
                 img={item.img}

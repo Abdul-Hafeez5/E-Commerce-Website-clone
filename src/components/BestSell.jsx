@@ -3,6 +3,7 @@ import { BsCart } from "react-icons/bs";
 import { IoEyeOutline } from "react-icons/io5";
 import { MdCompareArrows } from "react-icons/md";
 import { IoIosHeartEmpty } from "react-icons/io";
+import { Rating } from "primereact/rating";
 
 const BestSell = ({
   sale,
@@ -16,6 +17,7 @@ const BestSell = ({
 }) => {
   const [hovered, setHovered] = useState(false);
   const [showIcons, setShowIcons] = useState(false);
+  const [value, setValue] = useState(null);
 
   const handleMouseEnter = () => {
     setHovered(true);
@@ -63,10 +65,18 @@ const BestSell = ({
       </div>
       <div className="mx-8 ">
         <span className="text-xs font-lato text-secondary">{type}</span>
-        <h1 className="text-base font-bold cursor-pointer hover:text-primary font-quickSand">
+        <h1 className="text-base font-bold leading-5 cursor-pointer hover:text-primary font-quickSand">
           {heading}
         </h1>
-        <p>star and rating</p>
+        <div className="flex mt-2 card ">
+          <Rating
+            value={value}
+            onChange={(e) => setValue(e.value)}
+            cancel={false}
+            className="mx-1 text-yellow-300"
+          />
+          {/* <span className="text-sm font-lato text-secondary">(3.5)</span> */}
+        </div>
 
         <div className="my-3">
           <div className="flex items-center font-bold font-quickSand gap-x-3">

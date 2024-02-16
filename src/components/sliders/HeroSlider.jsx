@@ -4,12 +4,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Pagination,
-  Autoplay,
-  Mousewheel,
-  Keyboard,
-} from "swiper/modules";
+import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper/modules";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useMediaQuery } from "react-responsive";
 
@@ -75,8 +70,9 @@ const HeroSlider = () => {
       )}
       <Swiper
         className="mt-10 lg:px-10 mySwiper"
+        loop={true}
         ref={swiperRef}
-        modules={[ Pagination, Autoplay, Mousewheel, Keyboard]}
+        modules={[Pagination, Autoplay, Mousewheel, Keyboard]}
         autoplay={{ delay: 5000 }}
         pagination={{ clickable: true }}
         // mousewheel={true}

@@ -179,7 +179,7 @@ const BestSells = () => {
         <h1 className="mb-2 font-bold text-[28px] lg:text-[32px]">
           Daily Best Sells
         </h1>
-        <div className="flex items-center text-sm font-semibold gap-x-6 lg:text-base lg:mx-20 ">
+        <div className="flex items-center text-sm font-semibold gap-x-6 lg:text-base ">
           <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 text-primary">
             Featured
           </p>
@@ -193,13 +193,15 @@ const BestSells = () => {
       </div>
       <div className="flex gap-x-6">
         <div
-          className="flex-col items-center hidden h-full py-24 bg-center bg-cover lg:inline-flex max-w-[335px] gap-y-12 rounded-2xl"
+          className=" flex-col items-center hidden h-full pb-48 bg-center bg-cover lg:inline-flex max-w-[335px] gap-y-12 rounded-2xl"
           style={{ backgroundImage: `url(${banner4})` }}
         >
-          <h1 className="mt-12 font-bold text-[40px] mx-8 font-quickSand">
-            Bring nature into your home
-          </h1>
-          <Button />
+          <div className="flex flex-col items-start pt-16 mx-8 gap-y-16">
+            <h1 className="mt-12 font-bold text-[40px] leading-[48px] font-quickSand">
+              Bring nature into your home
+            </h1>
+            <Button className="" />
+          </div>
         </div>
         <div className="">
           <div className="absolute top-1/2 z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-0 cursor-pointer hover:bg-primary">

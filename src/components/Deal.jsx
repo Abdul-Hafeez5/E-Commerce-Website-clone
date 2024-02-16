@@ -36,7 +36,7 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
           </div>
         </div>
         <div className="flex flex-col items-center py-4 bg-white shadow-lg rounded-2xl">
-          <h1 className="px-12 mx-auto font-bold cursor-pointer font-quickSand hover:text-primary">
+          <h1 className="px-12 mx-auto font-bold leading-5 cursor-pointer font-quickSand hover:text-primary">
             {heading}
           </h1>
           {/* <p>star and rating</p> */}
