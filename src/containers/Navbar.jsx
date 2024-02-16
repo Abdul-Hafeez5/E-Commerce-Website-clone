@@ -8,9 +8,9 @@ import NavItemList from "../components/NavItemList";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between px-2 py-5 shadow-md sm:py-4 sm:px-4 lg:mx-8 ">
+    <div className="flex items-center justify-between px-2 py-5 shadow-md sm:py-4 sm:px-4 ">
       <div className="sm:order-2 lg:hidden">
-        <IoMenuSharp className="w-6 h-5 " />
+        <IoMenuSharp className="w-7 h-7 " />
       </div>
       <div className="sm:order-1">
         <img src={logo} alt="logo" className="w-36 " />
@@ -20,10 +20,10 @@ const Navbar = () => {
         <PiCaretDown className="mx-2 cursor-pointer " /> <span>|</span>
         <input
           type="text"
-          className="py-2 pr-8 mx-2 text-sm xl:pr-24 "
+          className="px-4 py-2 pr-8 mx-2 text-sm xl:pr-24 "
           placeholder="Search for items...."
         />
-        <CiSearch className="w-6 h-6 xl:mx-auto" />
+        <CiSearch className="w-6 h-6 cursor-pointer xl:mx-auto" />
       </div>
       <div className="sm:order-3">
         <NavItemList />
