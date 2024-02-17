@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-2 py-5 shadow-md sm:py-4 sm:px-4 ">
       <div className="sm:order-2 lg:hidden">
-        <IoMenuSharp className="w-7 h-7 " />
+        <IoMenuSharp className="w-5 h-5 mxs:h-7 mxs:w-7" />
       </div>
       <div className="sm:order-1">
         <img src={logo} alt="logo" className="w-36 " />

@@ -63,7 +63,7 @@ const Categories = () => {
   return (
     <div className="mx-2 my-6 font-quickSand lg:mx-6">
       <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
-        <h1 className="mb-6 text-[28px] font-bold  lg:text-[32px]">
+        <h1 className="mb-6 text-2xl mxs:text-[28px] leading-8 font-bold  lg:text-[32px]">
           Featured Categories
         </h1>
         <div className="flex flex-wrap flex-1 mb-6 text-sm font-semibold lg:text-base lg:self-baseline xs:block md:flex gap-x-6">

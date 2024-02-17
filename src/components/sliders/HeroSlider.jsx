@@ -90,7 +90,7 @@ const HeroSlider = () => {
         </>
       )}
       <Swiper
-        className="mt-10 lg:px-10 mySwiper"
+        className="mt-6  mxs:mt-10 lg:px-10 mySwiper"
         loop={true}
         ref={swiperRef}
         modules={[Pagination, Autoplay, Mousewheel, Keyboard]}

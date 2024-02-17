@@ -35,8 +35,8 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
             <p className="text-base font-lato text-secondary">Sec</p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center py-4 bg-white shadow-lg rounded-2xl">
-          <h1 className="px-12 mx-auto font-bold leading-5 cursor-pointer font-quickSand hover:text-primary">
+        <div className="flex flex-col items-center justify-center px-12 py-4 bg-white shadow-lg rounded-2xl">
+          <h1 className="font-bold leading-5 cursor-pointer  font-quickSand hover:text-primary">
             {heading}
           </h1>
           {/* <p>star and rating</p> */}
