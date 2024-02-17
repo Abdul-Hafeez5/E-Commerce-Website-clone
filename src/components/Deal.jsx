@@ -8,27 +8,27 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
         className="w-full bg-center bg-cover min-h-80 rounded-2xl"
         style={{ backgroundImage: `url(${bgImage})` }}
       ></div>
-      <div className="absolute flex flex-col items-center justify-center mx-2 xs:mx-6 w-[95%] top-1/3">
+      <div className="absolute flex flex-col items-center justify-center mx-2  w-[95%] top-1/3">
         <div className="flex my-6 xs:gap-x-2 gap-x-1">
-          <div className="flex flex-col items-center justify-center px-1 py-1 bg-white rounded-md xs:px-3">
+          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               800
             </p>
             <p className="text-base font-lato text-secondary">Days</p>
           </div>
-          <div className="px-1 py-1 bg-white rounded-md xs:px-3">
+          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               11
             </p>
             <p className="text-base font-lato text-secondary">Hours</p>
           </div>
-          <div className="px-1 py-1 bg-white rounded-md">
+          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               51
             </p>
             <p className="text-base font-lato text-secondary">Mins</p>
           </div>
-          <div className="px-1 py-1 bg-white rounded-md">
+          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               21
             </p>

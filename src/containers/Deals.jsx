@@ -16,7 +16,7 @@ const Deals = () => {
           <LiaGreaterThanSolid className="cursor-pointer" />
         </div>
       </div>
-      <div className="grid md:grid-cols-2 gap-y-16 lg:grid-cols-3 xl:grid-cols-4 gap-x-8">
+      <div className="grid md:grid-cols-2 gap-y-16 xs:gap-y-8 lg:grid-cols-3 xl:grid-cols-4 gap-x-8">
         {bgImages.map((img, index) => (
           <Deal
             key={index}

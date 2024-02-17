@@ -4,14 +4,14 @@ import { FaArrowRight } from "react-icons/fa";
 const Banner = ({ title, img }) => {
   return (
     <div
-      className={`flex items-center justify-center font-QuickSand h-full lg:h-64 mb-8 bg-cover bg-center pr-32 rounded-lg xs:pr-40  sm:pr-60 md:pr-10 xl:pr-44`}
+      className={`flex items-center justify-center py-4 sm:py-8 font-QuickSand h-full lg:h-64 mb-8 bg-cover bg-center pr-8  rounded-lg xs:pr-40  sm:pr-60 md:pr-10 xl:pr-44`}
       style={{ backgroundImage: `url(${img})` }}
     >
-      <div className="mx-auto ml-4 xs:ml-8">
-        <h1 className="text-[18px] leading-8  font-bold mb-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
+      <div className="flex flex-col items-center justify-center ml-4 xs:ml-8 font-quickSand xs:block">
+        <h1 className="text-base xs:text-[18px] leading-5 xs:leading-8  font-bold mb-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
           {title}
         </h1>
-        <div className="inline-flex items-center py-2 text-white rounded-md sm:justify-center gap-x-2 xs:px-4 bg-primary hover:bg-yellow-500">
+        <div className="inline-flex items-center px-4 py-2 text-white rounded-md sm:justify-center gap-x-2 bg-primary hover:bg-yellow-500">
           <button className="text-xs xs:font-bold">Shop Now</button>
           <FaArrowRight />
         </div>
