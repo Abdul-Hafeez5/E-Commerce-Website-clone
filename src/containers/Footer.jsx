@@ -4,7 +4,7 @@ import AfterFooter from "../components/AfterFooter";
 
 const Footer = () => {
   return (
-    <div className="mx-2 my-8 xs:mx-6">
+    <div className="mx-4 my-8 xs:mx-6">
       <MainFooter />
       <AfterFooter />
     </div>
