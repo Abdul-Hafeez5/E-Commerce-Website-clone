@@ -204,10 +204,10 @@ const BestSells = () => {
           </div>
         </div>
         <div className="">
-          <div className="absolute top-1/2 z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-0 cursor-pointer hover:bg-primary">
+          <div className="hidden sm:inline-block absolute top-1/2 z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-0 cursor-pointer hover:bg-primary">
             <FaArrowRight className="w-6 h-6" onClick={handleNextClick} />
           </div>
-          <div className="absolute top-1/2 text-secondary hover:text-white z-10 p-2 rounded-full bg-[#f2f3f4] left-1 lg:left-[340px] cursor-pointer hover:bg-primary ">
+          <div className="hidden sm:inline-block absolute top-1/2 text-secondary hover:text-white z-10 p-2 rounded-full bg-[#f2f3f4] left-1 lg:left-[340px] cursor-pointer hover:bg-primary ">
             <FaArrowLeft className="w-6 h-6 " onClick={handlePrevClick} />
           </div>
         </div>

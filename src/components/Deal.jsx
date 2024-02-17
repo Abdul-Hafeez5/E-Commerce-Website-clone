@@ -10,25 +10,25 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
       ></div>
       <div className="absolute flex flex-col items-center justify-center mx-2  w-[95%] top-1/3">
         <div className="flex my-6 xs:gap-x-2 gap-x-1">
-          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
+          <div className="flex flex-col items-center justify-center bg-white rounded-md h-14 w-14 ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               800
             </p>
             <p className="text-base font-lato text-secondary">Days</p>
           </div>
-          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
+          <div className="flex flex-col items-center justify-center bg-white rounded-md h-14 w-14 ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               11
             </p>
             <p className="text-base font-lato text-secondary">Hours</p>
           </div>
-          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
+          <div className="flex flex-col items-center justify-center py-3 bg-white rounded-md h-14 w-14 ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               51
             </p>
             <p className="text-base font-lato text-secondary">Mins</p>
           </div>
-          <div className="flex flex-col items-center justify-center w-12 h-12 px-1 py-3 bg-white rounded-md ">
+          <div className="flex flex-col items-center justify-center bg-white rounded-md w-14 h-14 ">
             <p className="text-xl font-semibold font-quickSand text-primary">
               21
             </p>
@@ -36,7 +36,7 @@ const Deal = ({ bgImage, price, discount, heading, seller }) => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center px-12 py-4 bg-white shadow-lg rounded-2xl">
-          <h1 className="font-bold leading-5 cursor-pointer  font-quickSand hover:text-primary">
+          <h1 className="font-bold leading-5 cursor-pointer font-quickSand hover:text-primary">
             {heading}
           </h1>
           {/* <p>star and rating</p> */}

@@ -9,7 +9,7 @@ const VegetableCard = ({ img, heading, price, discount }) => {
         <img
           src={img}
           alt=""
-          className="object-cover w-full rounded-xl md:w-24 md:h-24 lg:w-20 lg:h-20"
+          className="object-cover w-24 h-24 mxs:w-28 mxs:h-28 xs:w-full xs:h-full rounded-xl md:w-24 md:h-24 lg:w-20 lg:h-20"
         />
       </div>
       <div className="mx-4 font-quickSand">

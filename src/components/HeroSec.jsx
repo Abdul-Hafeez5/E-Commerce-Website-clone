@@ -5,7 +5,7 @@ const HeroSec = ({ img, heading, subHeading, bg }) => {
   return (
     <div className="w-full mx-2 xs:mx-6" style={{ backgroundColor: bg }}>
       <div
-        className="w-[97%] mxs:w-[95%] lg:w-[97%] h-full py-16 rounded-3xl lg:pl-20"
+        className="w-[97%] mxs:w-[95%] lg:w-[97%] h-full py-8 pb-16 rounded-3xl lg:pl-20"
         style={{
           backgroundImage: `url('${img}')`,
           backgroundSize: "cover",
@@ -18,7 +18,7 @@ const HeroSec = ({ img, heading, subHeading, bg }) => {
         <p className="pl-8 my-2 text-base font-lato text-secondary xs:my-5 xs:text-2xl md:text-3xl">
           {subHeading}
         </p>
-        <div className="inline-flex items-center justify-center ml-4 text-xs bg-white mxs:text-base mxs:ml-4 xs:pl-4 xs:ml-8 rounded-3xl">
+        <div className="inline-flex items-center justify-center mt-4 ml-4 text-xs bg-white mxs:text-base mxs:ml-4 xs:pl-4 xs:ml-8 rounded-3xl">
           <FiSend className="mx-3 sm:mr-4" />
           <input
             type="text"

@@ -103,7 +103,7 @@ const VegetableGrid = () => {
         </h1>
         <h1 className="hidden xl:inline-block xl:mr-40">Top Rated</h1>
       </div>
-      <div className="grid grid-cols-1 mt-8 gap-y-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 mt-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {FruitArray.map((item, index) => (
           <VegetableCard
             key={index}

@@ -138,7 +138,7 @@ let productList = [
 
 const Products = () => {
   return (
-    <div className="mx-2 xs:mx-6">
+    <div className="mx-2 my-6 xs:mx-6">
       <div className=" xl:items-center font-quickSand lg:flex lg:justify-between mb-11">
         <h1 className="mb-2 font-bold text-[28px] lg:text-[32px]">
           Popular products
