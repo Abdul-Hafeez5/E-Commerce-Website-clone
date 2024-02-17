@@ -61,7 +61,7 @@ const Categories = () => {
     }
   };
   return (
-    <div className="my-6 font-quickSand lg:mx-6">
+    <div className="mx-2 my-6 font-quickSand lg:mx-6">
       <div className="relative items-center xs:flex gap-x-10 lg:justify-between md:items-baseline ">
         <h1 className="mb-6 text-[28px] font-bold  lg:text-[32px]">
           Featured Categories

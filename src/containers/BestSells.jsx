@@ -174,12 +174,12 @@ const BestSells = () => {
     }
   };
   return (
-    <div className="relative mx-6 ">
+    <div className="relative mx-2 xs:mx-6 ">
       <div className="my-6 xl:items-center font-quickSand lg:flex lg:justify-between mb-11">
         <h1 className="mb-2 font-bold text-[28px] lg:text-[32px]">
           Daily Best Sells
         </h1>
-        <div className="flex items-center text-sm font-semibold gap-x-6 lg:text-base ">
+        <div className="flex flex-wrap items-center text-sm font-semibold gap-x-6 lg:text-base ">
           <p className="transition duration-300 ease-in-out delay-150 cursor-pointer hover:-translate-y-1 hover:scale-110 text-primary">
             Featured
           </p>
@@ -219,7 +219,7 @@ const BestSells = () => {
             keyboard={true}
             loop
             slidesPerView={1}
-            spaceBetween={10}
+            spaceBetween={6}
             breakpoints={{
               540: {
                 slidesPerView: 2,

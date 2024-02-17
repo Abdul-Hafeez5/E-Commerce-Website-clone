@@ -72,7 +72,7 @@ const HeroSlider = () => {
     }
   };
 
-  const isSmallScreen = useMediaQuery({ minWidth: 768 });
+  const isSmallScreen = useMediaQuery({ minWidth: 640 });
   return (
     <div className="relative ">
       {!hideArrows && (

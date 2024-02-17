@@ -5,7 +5,7 @@ const HeroSec = ({ img, heading, subHeading, bg }) => {
   return (
     <div className="w-full mx-2 xs:mx-6" style={{ backgroundColor: bg }}>
       <div
-        className="w-[97%] xs:w-[95%] h-full py-16 rounded-3xl lg:pl-20"
+        className="w-[97%] xs:w-[95%] lg:w-[97%] h-full py-16 rounded-3xl lg:pl-20"
         style={{
           backgroundImage: `url('${img}')`,
           backgroundSize: "cover",

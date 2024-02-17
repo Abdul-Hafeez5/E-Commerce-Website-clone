@@ -6,7 +6,7 @@ let bgImages = [banner5, banner6, banner7, banner8];
 
 const Deals = () => {
   return (
-    <div className="mx-6 ">
+    <div className="mx-2 xs:mx-6">
       <div className="flex items-center justify-between my-6 font-quickSand lg:flex mb-11">
         <h1 className=" font-bold text-[28px] xs:text-[32px]">
           Deals Of The Day

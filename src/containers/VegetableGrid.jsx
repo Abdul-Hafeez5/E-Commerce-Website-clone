@@ -92,7 +92,7 @@ let FruitArray = [
 
 const VegetableGrid = () => {
   return (
-    <div className="mx-8 my-8 mt-16">
+    <div className="mx-2 my-8 mt-16 xs:mx-6">
       <div className="flex flex-wrap mx-8 text-xl font-bold md:justify-between lg:mt-16 font-quickSand lg:text-2xl">
         <h1>Top Selling</h1>
         <h1 className="hidden md:inline-block md:mr-14 xl:mr-0">

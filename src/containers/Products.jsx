@@ -138,8 +138,8 @@ let productList = [
 
 const Products = () => {
   return (
-    <div>
-      <div className="mx-6 xl:items-center font-quickSand lg:flex lg:justify-between mb-11">
+    <div className="mx-2 xs:mx-6">
+      <div className=" xl:items-center font-quickSand lg:flex lg:justify-between mb-11">
         <h1 className="mb-2 font-bold text-[28px] lg:text-[32px]">
           Popular products
         </h1>
@@ -167,7 +167,7 @@ const Products = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 mx-6 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6">
+      <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6">
         {productList.map((item, index) => (
           <Product
             key={index}
