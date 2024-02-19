@@ -10,7 +10,7 @@ const Category = ({ img, Name, items, bgColor }) => {
         <img
           src={img}
           alt=""
-          className="transition duration-500 transform cursor-pointer scale-[0.8] hover:scale-[1] "
+          className="w-24 h-24 transition duration-500 transform cursor-pointer scale-[0.8] hover:scale-[1] "
         />
       </div>
       <div className="flex flex-col items-center justify-center mb-3">

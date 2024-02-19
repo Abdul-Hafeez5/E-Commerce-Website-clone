@@ -1,15 +1,15 @@
-import Categories from "./containers/Categories";
-import Banners from "./containers/Banners";
-import Header from "./containers/Header";
-import HeroSlider from "./components/sliders/HeroSlider";
-import Products from "./containers/Products";
-import BestSells from "./containers/BestSells";
-import Deals from "./containers/Deals";
-import VegetableGrid from "./containers/VegetableGrid";
-import QuickViews from "./containers/QuickViews";
-import Footer from "./containers/Footer";
-import LastHeroSec from "./containers/LastHeroSec";
-import ScrollToTopArrow from "./components/ScrollTopArrow";
+import Categories from "./Pages/Landing Page/containers/Categories";
+import Banners from "./Pages/Landing Page/containers/Banners";
+import Header from "./Pages/Landing Page/containers/Header";
+import HeroSlider from "./Pages/Landing Page/components/sliders/HeroSlider";
+import Products from "./Pages/Landing Page/containers/Products";
+import BestSells from "./Pages/Landing Page/containers/BestSells";
+import Deals from "./Pages/Landing Page/containers/Deals";
+import VegetableGrid from "./Pages/Landing Page/containers/VegetableGrid";
+import QuickViews from "./Pages/Landing Page/containers/QuickViews";
+import Footer from "./Pages/Landing Page/containers/Footer";
+import LastHeroSec from "./Pages/Landing Page/containers/LastHeroSec";
+import ScrollToTopArrow from "./Pages/Landing Page/components/ScrollTopArrow";
 
 function App() {
   return (
