@@ -79,10 +79,10 @@ const HeroSlider = () => {
         <>
           {isSmallScreen && (
             <>
-              <div className="absolute z-10 flex items-center justify-center p-2 rounded-full cursor-pointer text-slate-700 bg-slate-200 left-16 top-1/2 hover:bg-primary hover:text-white">
+              <div className=" left-16 top-1/2 navigation-buttons">
                 <BsChevronLeft className="w-5 h-5" onClick={handlePrevClick} />
               </div>
-              <div className="absolute z-10 flex items-center justify-center p-2 rounded-full cursor-pointer text-slate-700 hover:text-white bg-slate-200 right-16 top-1/2 hover:bg-primary">
+              <div className="right-16 top-1/2 navigation-buttons">
                 <BsChevronRight className="w-5 h-5" onClick={handleNextClick} />
               </div>
             </>
@@ -90,7 +90,7 @@ const HeroSlider = () => {
         </>
       )}
       <Swiper
-        className="mt-6  mxs:mt-10 lg:px-10 mySwiper"
+        className="mt-6 mxs:mt-10 lg:px-10 mySwiper"
         loop={true}
         ref={swiperRef}
         modules={[Pagination, Autoplay, Mousewheel, Keyboard]}
