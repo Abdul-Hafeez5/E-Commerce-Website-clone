@@ -5,6 +5,7 @@ import { CiFilter } from "react-icons/ci";
 import { Rating } from "primereact/rating";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
+import { TiTick } from "react-icons/ti";
 // import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import Product from "../../Landing Page/components/Product";
@@ -171,6 +172,7 @@ let DealProducts = [
 
 let NewProduct = ({ img, title, price }) => {
   const [value, setValue] = useState(null);
+
   return (
     <div className="flex items-center py-2 border-b gap-x-3">
       <div>
@@ -207,6 +209,21 @@ let CategoryCard = ({ img, text }) => {
   );
 };
 const DealsCategories = () => {
+  const [isListOpen, setIsListOpen] = useState(false);
+  const [isSortOpen, setIsSortOpen] = useState(false);
+
+  const handleListEnter = () => {
+    setIsListOpen(true);
+  };
+  const handleListLeave = () => {
+    setIsListOpen(false);
+  };
+  const handleSortEnter = () => {
+    setIsSortOpen(true);
+  };
+  const handleSortLeave = () => {
+    setIsSortOpen(false);
+  };
   return (
     <div className="flex flex-col my-6 xl:flex-row gap-y-6 xs:mx-6">
       <div>
@@ -215,15 +232,60 @@ const DealsCategories = () => {
             We found <span className="text-primary">29</span> items for you
           </h1>
           <div className="flex items-center text-[13px] gap-x-2 font-lato text-secondary">
-            <div className="flex flex-wrap items-center px-3 py-2 border rounded-lg cursor-pointer mxs:gap-x-1">
+            <div
+              className="relative flex flex-wrap items-center px-3 py-2 border rounded-lg cursor-pointer mxs:gap-x-1"
+              onMouseEnter={handleListEnter}
+              onMouseLeave={handleListLeave}
+            >
               <SiWindows11 />
               <p>Show: 50</p>
               <PiCaretDown className="cursor-pointer mxs:mx-2" />
+              {isListOpen && (
+                <div className="absolute flex flex-col gap-y-3  border z-10 w-full bg-[#ffffff] top-8 rounded-xl">
+                  <div className="flex items-center py-2 gap-x-3 hover:bg-primary hover:text-white">
+                    <TiTick className="w-4 h-4 text-primary hover:text-white" />
+                    <p>50</p>
+                  </div>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    100
+                  </p>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    150
+                  </p>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    All
+                  </p>
+                </div>
+              )}
             </div>
-            <div className="flex flex-wrap items-center px-2 py-1 border rounded-lg cursor-pointer mxs:py-2 mxs:px-3 gap-x-1">
+            <div
+              className="relative flex flex-wrap items-center px-2 py-1 border rounded-lg cursor-pointer mxs:py-2 mxs:px-3 gap-x-1"
+              onMouseEnter={handleSortEnter}
+              onMouseLeave={handleSortLeave}
+            >
               <SiWindows11 />
               <p>Sort by: Featured</p>
               <PiCaretDown className="cursor-pointer mxs:mx-2" />
+              {isSortOpen && (
+                <div className="absolute flex flex-col gap-y-3  border z-10 w-full bg-[#ffffff] top-8 rounded-xl">
+                  <div className="flex items-center py-2 gap-x-3 hover:bg-primary hover:text-white">
+                    <TiTick className="w-4 h-4 text-primary hover:text-white" />
+                    <p>Featured</p>
+                  </div>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    Price: Low to High
+                  </p>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    Price: High to low
+                  </p>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    Release Date
+                  </p>
+                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
+                    Avg. Rating
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
