@@ -42,7 +42,7 @@ const Product = ({
       >
         {sale}
       </h1>
-      <div className="relative flex items-center justify-center cursor-pointer h-52 w-52 group">
+      <div className="relative flex items-center justify-center cursor-pointer h-52 w-52 xl:h-44 xl:w-44 group">
         <img
           src={hovered ? hovImg : img}
           alt="products"

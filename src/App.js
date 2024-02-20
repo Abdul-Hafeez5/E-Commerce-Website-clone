@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Header />
-      <DealsApp />
+      <DealsApp/>
       {/* <HeroSlider /> */}
       {/* <Categories /> */}
       {/* <Banners /> */}

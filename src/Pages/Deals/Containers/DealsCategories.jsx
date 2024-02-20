@@ -24,6 +24,14 @@ import {
   product_10_1,
   product_10_2,
 } from "../../Landing Page/assets/Products/index";
+// import Deals from "../../Landing Page/containers/Deals";
+import {
+  category1,
+  category2,
+  category3,
+  category4,
+  category5,
+} from "../Assets/Deals/index";
 
 let productList = [
   {
@@ -137,12 +145,30 @@ let productList = [
     discount: 32.8,
   },
 ];
+let CategoryList = [
+  { text: "Milks & Dairies", img: category1 },
+  { text: "Clothing", img: category2 },
+  { text: "Pet Foods", img: category3 },
+  { text: "Baking material", img: category4 },
+  { text: "Fresh Fruit", img: category5 },
+];
 
+let CategoryCard = ({ img, text }) => {
+  return (
+    <div className="flex items-center px-2 py-2 text-sm border rounded-lg font-lato gap-x-4">
+      <img src={img} alt="" className="justify-start w-8 h-8" />
+      <h1 className="flex flex-wrap flex-1">{text}</h1>
+      <p className="px-2 py-1 text-xs rounded-full justify-end bg-[#BCE3C9]">
+        0
+      </p>
+    </div>
+  );
+};
 const DealsCategories = () => {
   return (
-    <div className="flex mx-2 my-6 xs:mx-6">
+    <div className="flex flex-col my-6 xl:flex-row gap-y-6 xs:mx-6">
       <div>
-        <div className="flex flex-col justify-between my-6 gap-y-3 sm:flex-row">
+        <div className="flex flex-col justify-between mb-6 gap-y-3 sm:flex-row">
           <h1 className="text-base font-lato text-secondary">
             We found <span className="text-primary">29</span> items for you
           </h1>
@@ -159,13 +185,34 @@ const DealsCategories = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6">
+        <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6 xl:gap-x-3">
           {productList.map((item, index) => (
             <Product key={index} {...item} />
           ))}
         </div>
+        {/* <Deals /> */}
       </div>
-      <div className="w-[40%]">Side Grid</div>
+      <div className="ml-6 xl:w-[40%] flex flex-col gap-y-6 ">
+        <div className="px-2 py-3 pl-4 border rounded-lg shadow-lg">
+          <h1 className="py-2 my-2 text-xl font-bold leading-6 border-b lg:text-2xl font-quickSand">
+            Category
+          </h1>
+          <div className="flex flex-col mx-2 gap-y-2">
+            {CategoryList.map((item, index) => (
+              <CategoryCard key={index} {...item} />
+            ))}
+          </div>
+        </div>
+        <div className="px-2 py-3 pl-4 border rounded-lg shadow-lg ">
+          <h1 className="py-2 my-2 text-xl font-bold leading-6 border-b lg:text-2xl font-quickSand">
+            Fill by Price
+          </h1>
+          <div>Rupees indicator</div>
+          <div></div>
+        </div>
+        <div>New Products</div>
+        <div>Image</div>
+      </div>
     </div>
   );
 };
