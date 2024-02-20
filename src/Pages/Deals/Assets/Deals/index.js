@@ -3,3 +3,8 @@ export { default as category2 } from "./category-2.svg";
 export { default as category3 } from "./category-3.svg";
 export { default as category4 } from "./category-4.svg";
 export { default as category5 } from "./category-5.svg";
+export { default as thumbanil3 } from "./thumbnail-3.jpg";
+export { default as thumbanil4 } from "./thumbnail-4.jpg";
+export { default as thumbanil5 } from "./thumbnail-5.jpg";
+export { default as banner11 } from "./banner-11.png";
+export { default as banner13 } from "./banner-13.png";

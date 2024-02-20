@@ -1,10 +1,10 @@
-import Categories from "./Pages/Landing Page/containers/Categories";
-import Banners from "./Pages/Landing Page/containers/Banners";
+// import Categories from "./Pages/Landing Page/containers/Categories";
+// import Banners from "./Pages/Landing Page/containers/Banners";
 import Header from "./Pages/Landing Page/containers/Header";
-import HeroSlider from "./Pages/Landing Page/components/sliders/HeroSlider";
-import Products from "./Pages/Landing Page/containers/Products";
-import BestSells from "./Pages/Landing Page/containers/BestSells";
-import Deals from "./Pages/Landing Page/containers/Deals";
+// import HeroSlider from "./Pages/Landing Page/components/sliders/HeroSlider";
+// import Products from "./Pages/Landing Page/containers/Products";
+// import BestSells from "./Pages/Landing Page/containers/BestSells";
+// import Deals from "./Pages/Landing Page/containers/Deals";
 import VegetableGrid from "./Pages/Landing Page/containers/VegetableGrid";
 import QuickViews from "./Pages/Landing Page/containers/QuickViews";
 import Footer from "./Pages/Landing Page/containers/Footer";
@@ -16,13 +16,13 @@ function App() {
   return (
     <div>
       <Header />
-      <DealsApp/>
+      <DealsApp />
       {/* <HeroSlider /> */}
       {/* <Categories /> */}
       {/* <Banners /> */}
       {/* <Products /> */}
       {/* <BestSells /> */}
-      <Deals />
+      {/* <Deals /> */}
       <VegetableGrid />
       <LastHeroSec />
       <QuickViews />
