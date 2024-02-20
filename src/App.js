@@ -10,16 +10,18 @@ import QuickViews from "./Pages/Landing Page/containers/QuickViews";
 import Footer from "./Pages/Landing Page/containers/Footer";
 import LastHeroSec from "./Pages/Landing Page/containers/LastHeroSec";
 import ScrollToTopArrow from "./Pages/Landing Page/components/ScrollTopArrow";
+import DealsApp from "./Pages/Deals/DealsApp";
 
 function App() {
   return (
     <div>
       <Header />
-      <HeroSlider />
-      <Categories />
-      <Banners />
-      <Products />
-      <BestSells />
+      <DealsApp />
+      {/* <HeroSlider /> */}
+      {/* <Categories /> */}
+      {/* <Banners /> */}
+      {/* <Products /> */}
+      {/* <BestSells /> */}
       <Deals />
       <VegetableGrid />
       <LastHeroSec />
