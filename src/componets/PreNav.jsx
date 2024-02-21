@@ -32,7 +32,6 @@ const PreNav = () => {
           <RxCaretDown className="w-3 h-3 cursor-pointer " />
         </span>
       </div>
-      {/* <hr className="m bg-primary" /> */}
     </div>
   );
 };

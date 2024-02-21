@@ -16,15 +16,15 @@ const Navbar = () => {
       <div className="sm:order-1">
         <img src={logo} alt="logo" className="w-36 " />
       </div>
-      <div className="hidden lg:inline-flex font-quickSand text-sm order-2 items-center justify-start flex-grow-0 border-2 border-[#3bb77e] rounded-md px-7 xl:flex-1 xl:mx-8 ">
+      <div className="hidden lg:flex  font-quickSand text-sm order-2 items-center justify-start flex-grow-0 border-2 border-[#3bb77e] rounded-md px-4 py-2 xl:flex-1 xl:mx-8 ">
         <p className="font-semibold cursor-pointer">All Categories</p>
         <PiCaretDown className="mx-2 cursor-pointer" /> <span>|</span>
         <input
           type="text"
-          className="px-4 py-2 pr-8 mx-2 text-sm xl:pr-24 "
+          className="flex-1 px-4 py-2 mx-2 text-sm "
           placeholder="Search for items...."
         />
-        <CiSearch className="w-6 h-6 cursor-pointer xl:mx-auto" />
+        <CiSearch className="w-6 h-6 cursor-pointer " />
       </div>
       <div className="sm:order-3">
         <NavItemList />

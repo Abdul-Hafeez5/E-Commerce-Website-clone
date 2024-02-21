@@ -186,7 +186,7 @@ const DealsCategories = () => {
     setIsSortOpen(false);
   };
   return (
-    <div className="flex flex-col mx-2 my-6 xl:flex-row gap-y-6 xs:mx-6">
+    <div className="flex flex-col mx-2 my-6 xl:flex-row gap-y-6 xs:ml-6 md:mr-6 xl:mr-0">
       <div>
         <div className="flex flex-col justify-between mb-6 gap-y-3 sm:flex-row">
           <h1 className="text-base font-lato text-secondary">
@@ -256,7 +256,7 @@ const DealsCategories = () => {
         </div>
         <Deals />
       </div>
-      <div className="ml-6 xl:w-[40%] flex flex-col gap-y-6 ">
+      <div className="mx-4 xl:ml-6 xl:w-[40%] flex flex-col gap-y-6 ">
         <div className="px-2 py-3 pl-4 border rounded-lg shadow-lg">
           <h1 className="py-2 my-2 text-xl font-bold leading-6 border-b lg:text-2xl font-quickSand">
             Category

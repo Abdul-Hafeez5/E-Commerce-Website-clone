@@ -29,7 +29,7 @@ const DealsHeroSec = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex font-bold gap-x-3 font-quickSand text-[17px] leading-6 text-primary">
+        <div className="hidden lg:flex lg:mx-3 font-bold gap-x-3 font-quickSand text-[17px] leading-6 text-primary">
           <div className="transition-effect">
             <RxCross1 className="herosec-icons" /> <p>Cabbage</p>
           </div>
