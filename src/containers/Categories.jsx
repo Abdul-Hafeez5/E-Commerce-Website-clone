@@ -15,8 +15,8 @@ import {
   cat12,
   cat13,
   cat14,
-} from "../assets/Categories/index";
-import Category from "../components/Category";
+} from "../assets/Categories";
+import Category from "../componets/Category";
 
 let CategoryList = [
   { Name: "Peach", img: cat1, items: 14, bgColor: "#f2fce4" },

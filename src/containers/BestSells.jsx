@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Button from "../components/Button";
+import Button from "../componets/Button";
 import { banner4 } from "../assets/Deals/index";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
@@ -28,8 +28,8 @@ import {
   product_9_2,
   product_10_1,
   product_10_2,
-} from "../assets/Products/index";
-import BestSell from "../components/BestSell";
+} from "../assets/Products";
+import BestSell from "../componets/BestSell";
 
 let BestSellsProduct = [
   {

@@ -1,5 +1,5 @@
 import React from "react";
-import Product from "../components/Product";
+import Product from "../componets/Product";
 import {
   product_1_1,
   product_1_2,
@@ -21,7 +21,7 @@ import {
   product_9_2,
   product_10_1,
   product_10_2,
-} from "../assets/Products/index";
+} from "../assets/Products";
 
 let productList = [
   {

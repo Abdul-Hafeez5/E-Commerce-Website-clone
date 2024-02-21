@@ -1,5 +1,5 @@
 import React from "react";
-import VegetableCard from "../components/VegetableCard";
+import VegetableCard from "../componets/VegetableCard";
 import {
   thumbnail_1,
   thumbnail_2,

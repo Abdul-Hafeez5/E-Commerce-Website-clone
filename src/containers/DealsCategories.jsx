@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import "rc-slider/assets/index.css";
-import Product from "../../Landing Page/components/Product";
+import Product from "../componets/Product";
 import {
   product_1_1,
   product_1_2,
@@ -28,8 +28,8 @@ import {
   product_9_2,
   product_10_1,
   product_10_2,
-} from "../../Landing Page/assets/Products/index";
-import Deals from "../../Landing Page/containers/Deals";
+} from "../assets/Products/index";
+import Deals from "./Deals";
 import {
   banner11,
   category1,
@@ -40,9 +40,9 @@ import {
   thumbanil3,
   thumbanil4,
   thumbanil5,
-} from "../Assets/Deals/index";
-import NewProduct from "../Component/NewProduct";
-import CategoryCard from "../Component/CategoryCard";
+} from "../assets/DealsPage";
+import NewProduct from "../componets/NewProduct";
+import CategoryCard from "../componets/CategoryCard";
 
 let productList = [
   {

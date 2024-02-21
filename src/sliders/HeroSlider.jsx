@@ -8,8 +8,8 @@ import { Pagination, Autoplay, Mousewheel, Keyboard } from "swiper/modules";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { useMediaQuery } from "react-responsive";
 
-import { slider_1, slider_2 } from "../../assets/HeroSlider/index";
-import HeroSec from "../HeroSec";
+import { slider_1, slider_2 } from "../assets/HeroSlider";
+import HeroSec from "../componets/HeroSec";
 
 let HeroContent = [
   {

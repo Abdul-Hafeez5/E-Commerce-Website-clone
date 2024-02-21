@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/Banner";
-import { banner1, banner2, banner3 } from "../assets/Cards/index";
+import Banner from "../componets/Banner";
+import { banner1, banner2, banner3 } from "../assets/Cards";
 
 let BannerDetails = [
   { title: "Everyday Fresh and clean with our Products", img: banner1 },

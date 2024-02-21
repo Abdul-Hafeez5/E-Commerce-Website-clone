@@ -1,5 +1,5 @@
 import React from "react";
-import { banner9 } from "../assets/Deals/index";
+import { banner9 } from "../assets/Deals";
 import { FiSend } from "react-icons/fi";
 
 const LastHeroSec = () => {

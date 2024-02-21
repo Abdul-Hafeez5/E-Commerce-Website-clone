@@ -1,7 +1,7 @@
 import React from "react";
-import Deal from "../components/Deal";
+import Deal from "../componets/Deal";
 import { LiaGreaterThanSolid } from "react-icons/lia";
-import { banner5, banner6, banner7, banner8 } from "../assets/Deals/index";
+import { banner5, banner6, banner7, banner8 } from "../assets/Deals";
 let bgImages = [banner5, banner6, banner7, banner8];
 
 const Deals = () => {

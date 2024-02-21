@@ -1,6 +1,6 @@
 import React from "react";
-import { icon1, icon2, icon3, icon4, icon5 } from "../assets/FooterIcons/index";
-import QuickView from "../components/QuickView";
+import { icon1, icon2, icon3, icon4, icon5 } from "../assets/FooterIcons";
+import QuickView from "../componets/QuickView";
 
 let QuickViewList = [
   {

@@ -8,7 +8,7 @@ import {
   payment_method,
   app_store,
   google_play,
-} from "../assets/Logo & raw/index";
+} from "../assets/Logo & raw";
 
 const MainFooter = () => {
   return (

@@ -3,8 +3,8 @@ import { IoMenuSharp } from "react-icons/io5";
 import { PiCaretDown } from "react-icons/pi";
 import { CiSearch } from "react-icons/ci";
 
-import { logo } from "../assets/Logo & raw/index";
-import NavItemList from "../components/NavItemList";
+import { logo } from "../assets/Logo & raw";
+import NavItemList from "../componets/NavItemList";
 
 const Navbar = () => {
   return (
