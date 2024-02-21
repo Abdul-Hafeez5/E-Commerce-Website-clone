@@ -23,7 +23,7 @@ const DropdownNav = ({ title, children }) => {
         <RxCaretDown />
       </span>
       {isOpen && (
-        <div className="absolute z-10 w-48 bg-white border rounded-md shadow-lg text-secondary top-6">
+        <div className="absolute z-10 bg-white border rounded-md shadow-lg w-36 text-secondary top-6">
           <ul className="p-3">{children}</ul>
         </div>
       )}

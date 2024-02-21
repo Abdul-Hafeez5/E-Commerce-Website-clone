@@ -80,7 +80,7 @@ const Categories = () => {
             Vegetables
           </p>
         </div>
-        <div className="relative self-start hidden md:block ">
+        <div className="relative self-start hidden lg:block ">
           <div className="absolute z-10 p-2 rounded-full bg-[#f2f3f4]  text-secondary hover:text-white right-1 cursor-pointer hover:bg-primary">
             <FaArrowRight className="w-6 h-6" onClick={handleNextClick} />
           </div>
@@ -104,7 +104,7 @@ const Categories = () => {
               slidesPerView: 4,
             },
             1024: {
-              slidesPerView: 8,
+              slidesPerView: 7,
             },
             1208: {
               slidesPerView: 10,

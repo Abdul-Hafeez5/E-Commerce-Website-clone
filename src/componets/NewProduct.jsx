@@ -10,7 +10,7 @@ const NewProduct = ({ img, title, price }) => {
         <img src={img} alt="" className="w-20 h-20" />
       </div>
       <div>
-        <h1 className="text-xl font-bold font-quickSand text-primary hover:text-yellow-400">
+        <h1 className="text-[18px] font-bold font-quickSand text-primary hover:text-yellow-400">
           {title}
         </h1>
         <p className="text-base font-lato text-secondary">${price}</p>

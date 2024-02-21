@@ -28,14 +28,14 @@ const PostNav = () => {
         isNavFixed ? "fixed top-0 w-full" : ""
       }`}
     >
-      <div className="inline-flex items-center px-2 py-2 mx-3 text-white rounded-md cursor-pointer gap-x-2 bg-primary">
+      <div className="inline-flex items-center px-1 py-2 mx-2 text-white rounded-md cursor-pointer gap-x-1 bg-primary">
         <SiWindows />
-        <p>Browse All Categories</p>
+        <p className="flex flex-wrap">Browse All Categories</p>
         <RxCaretDown />
       </div>
 
-      <div className="flex-wrap mr-3">
-        <ul className="flex gap-x-6 xl:gap-x-8 ">
+      <div className="flex flex-wrap mr-3 ">
+        <ul className="flex gap-x-4 xl:gap-x-4 ">
           <li className="cursor-pointer hover:text-primary">
             <Link to="/deals">Deals</Link>
           </li>

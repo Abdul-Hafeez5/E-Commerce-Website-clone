@@ -186,7 +186,7 @@ const DealsCategories = () => {
     setIsSortOpen(false);
   };
   return (
-    <div className="flex flex-col my-6 xl:flex-row gap-y-6 xs:mx-6">
+    <div className="flex flex-col mx-2 my-6 xl:flex-row gap-y-6 xs:mx-6">
       <div>
         <div className="flex flex-col justify-between mb-6 gap-y-3 sm:flex-row">
           <h1 className="text-base font-lato text-secondary">
