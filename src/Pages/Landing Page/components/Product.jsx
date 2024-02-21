@@ -52,15 +52,12 @@ const Product = ({
           <div className="absolute inset-0 flex items-center justify-center transition duration-300 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 ease top-1/2 left-1/2">
             <div className="p-2 bg-white">
               <IoIosHeartEmpty className="w-5 h-5 text-primary hover:text-yellow-400" />
-              {/* <p className="text-xs text-primary">Add</p> */}
             </div>
             <div className="p-2 bg-white">
               <MdCompareArrows className="w-5 h-5 text-primary hover:text-yellow-400" />
-              {/* <p className="text-xs text-primary">Wishlist</p> */}
             </div>
             <div className="p-2 bg-white">
               <IoEyeOutline className="w-5 h-5 text-primary hover:text-yellow-400" />
-              {/* <p className="text-xs text-primary">Chat</p> */}
             </div>
           </div>
         )}

@@ -2,6 +2,7 @@ import { SiWindows } from "react-icons/si";
 import { RxCaretDown } from "react-icons/rx";
 import { LuHeadphones } from "react-icons/lu";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const PostNav = () => {
   const [isNavFixed, setIsNavFixed] = useState(false);
@@ -82,13 +83,15 @@ const PostNav = () => {
 
       <div className="flex-wrap mr-3">
         <ul className="flex gap-x-6 xl:gap-x-8 ">
-          <li className="cursor-pointer hover:text-primary">Deals</li>
+          <li className="cursor-pointer hover:text-primary">
+            <Link to="/deals">Deals</Link>
+          </li>
           <li
             className="relative flex items-center cursor-pointer gap-x-2 text-primary"
             onMouseEnter={handleHomeEnter}
             onMouseLeave={handleHomeLeave}
           >
-            Home
+            <Link to="/">Home</Link>
             <span>
               <RxCaretDown />
             </span>

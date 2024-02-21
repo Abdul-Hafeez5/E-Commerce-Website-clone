@@ -114,13 +114,7 @@ const Categories = () => {
         >
           {CategoryList.map((item, index) => (
             <SwiperSlide className="h-24" key={index}>
-              <Category
-                className={"mb-8"}
-                img={item.img}
-                Name={item.Name}
-                items={item.items}
-                bgColor={item.bgColor}
-              />
+              <Category className={"mb-8"} {...item} />
             </SwiperSlide>
           ))}
         </Swiper>

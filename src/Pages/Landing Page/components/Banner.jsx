@@ -8,7 +8,7 @@ const Banner = ({ title, img }) => {
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className="flex flex-col lg:justify-start xs:ml-4 font-quickSand xs:block">
-        <h1 className="text-base xs:text-[18px] leading-5 xs:leading-8  font-bold mb-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-100 duration-300">
+        <h1 className="text-base xs:text-[18px] leading-5 xs:leading-8  font-bold mb-5 animation-effect">
           {title}
         </h1>
         <div className="inline-flex items-center self-start px-4 py-2 text-white rounded-md sm:justify-center gap-x-2 bg-primary hover:bg-yellow-500">

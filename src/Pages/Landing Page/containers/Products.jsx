@@ -169,18 +169,7 @@ const Products = () => {
       </div>
       <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6">
         {productList.map((item, index) => (
-          <Product
-            key={index}
-            sale={item.sale}
-            img={item.img}
-            hovImg={item.hovImg}
-            type={item.type}
-            heading={item.heading}
-            seller={item.seller}
-            price={item.price}
-            discount={item.discount}
-            bgSale={item.saleBg}
-          />
+          <Product key={index} {...item} />
         ))}
       </div>
     </div>

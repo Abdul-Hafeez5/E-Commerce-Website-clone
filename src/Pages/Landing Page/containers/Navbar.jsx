@@ -7,22 +7,12 @@ import { logo } from "../assets/Logo & raw/index";
 import NavItemList from "../components/NavItemList";
 
 const Navbar = () => {
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <div className="relative flex items-center justify-between px-2 py-5 shadow-md sm:py-4 sm:px-4 ">
       <div className="sm:order-2 lg:hidden">
-        <IoMenuSharp
-          className="w-5 h-5 mxs:h-7 mxs:w-7"
-          // onClick={() => setIsMenuOpen(true)}
-        />
+        <IoMenuSharp className="w-5 h-5 mxs:h-7 mxs:w-7" />
       </div>
-      {/* <div
-        className={`absolute w-[380px] h-[620px] bg-cyan-500 ${
-          isMenuOpen ? "block" : "hidden"
-        }`}
-      >
-        <p>Hello</p>
-      </div> */}
+
       <div className="sm:order-1">
         <img src={logo} alt="logo" className="w-36 " />
       </div>

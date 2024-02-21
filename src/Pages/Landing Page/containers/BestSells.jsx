@@ -236,17 +236,7 @@ const BestSells = () => {
           >
             {BestSellsProduct.map((item, index) => (
               <SwiperSlide key={index}>
-                <BestSell
-                  sale={item.sale}
-                  img={item.img}
-                  hovImg={item.hovImg}
-                  type={item.type}
-                  heading={item.heading}
-                  seller={item.seller}
-                  price={item.price}
-                  discount={item.discount}
-                  bgSale={item.saleBg}
-                />
+                <BestSell {...item} />
               </SwiperSlide>
             ))}
           </Swiper>

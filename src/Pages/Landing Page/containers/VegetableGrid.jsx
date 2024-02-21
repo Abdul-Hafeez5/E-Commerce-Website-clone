@@ -105,13 +105,7 @@ const VegetableGrid = () => {
       </div>
       <div className="grid grid-cols-1 mt-8 gap-y-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {FruitArray.map((item, index) => (
-          <VegetableCard
-            key={index}
-            img={item.img}
-            heading={item.heading}
-            price={item.price}
-            discount={item.discount}
-          />
+          <VegetableCard key={index} {...item} />
         ))}
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { RxCross1 } from "react-icons/rx";
 import { LiaGreaterThanSolid } from "react-icons/lia";
 import { BiHome } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const DealsHeroSec = () => {
   return (
@@ -14,7 +15,9 @@ const DealsHeroSec = () => {
           <div className="flex pl-8 text-sm font-semibold font-lato gap-x-4 text-secondary">
             <div className="flex items-center cursor-pointer gap-x-1 text-primary hover:text-yellow-400 ">
               <BiHome className="w-4 h-4" />
-              <p>Home</p>
+              <Link to="/">
+                <p>Home</p>
+              </Link>
             </div>
             <div className="flex items-center gap-x-2">
               <LiaGreaterThanSolid className="w-2 h-6" />
@@ -27,20 +30,20 @@ const DealsHeroSec = () => {
           </div>
         </div>
         <div className="hidden lg:flex font-bold gap-x-3 font-quickSand text-[17px] leading-6 text-primary">
-          <div className="flex items-center px-3 py-2 transition duration-300 ease-in-out delay-150 bg-white cursor-pointer rounded-3xl gap-x-1 hover:-translate-y-1 hover:scale-110 hover:text-yellow-400 hover:font-semibold">
-            <RxCross1 className="w-3 h-3 text-secondary" /> <p>Cabbage</p>
+          <div className="transition-effect">
+            <RxCross1 className="herosec-icons" /> <p>Cabbage</p>
           </div>
-          <div className="flex items-center px-3 py-2 transition duration-300 ease-in-out delay-150 bg-white cursor-pointer rounded-3xl gap-x-1 hover:-translate-y-1 hover:scale-110 hover:text-yellow-400 hover:font-semibold">
-            <RxCross1 className="w-3 h-3 text-secondary" /> <p>Broccoli</p>
+          <div className="transition-effect">
+            <RxCross1 className="herosec-icons" /> <p>Broccoli</p>
           </div>
-          <div className="flex items-center px-3 py-2 transition duration-300 ease-in-out delay-150 bg-white cursor-pointer rounded-3xl gap-x-1 hover:-translate-y-1 hover:scale-110 hover:text-yellow-400 hover:font-semibold">
-            <RxCross1 className="w-3 h-3 text-secondary" /> <p>Arthicoke</p>
+          <div className="transition-effect">
+            <RxCross1 className="herosec-icons" /> <p>Arthicoke</p>
           </div>
-          <div className="flex items-center px-3 py-2 transition duration-300 ease-in-out delay-150 bg-white cursor-pointer rounded-3xl gap-x-1 hover:-translate-y-1 hover:scale-110 hover:text-yellow-400 hover:font-semibold">
-            <RxCross1 className="w-3 h-3 text-secondary" /> <p>Celery</p>
+          <div className="transition-effect">
+            <RxCross1 className="herosec-icons" /> <p>Celery</p>
           </div>
-          <div className="flex items-center px-3 py-2 transition duration-300 ease-in-out delay-150 bg-white cursor-pointer rounded-3xl gap-x-1 hover:-translate-y-1 hover:scale-110 hover:text-yellow-400 hover:font-semibold">
-            <RxCross1 className="w-3 h-3 text-secondary" /> <p>Spinach</p>
+          <div className="transition-effect">
+            <RxCross1 className="herosec-icons" /> <p>Spinach</p>
           </div>
         </div>
       </div>

@@ -63,53 +63,43 @@ const MainFooter = () => {
         </div>
         <div className="flex flex-col gap-y-4">
           <p className="text-secondary">Company</p>
-          <p className="cursor-pointer hover:text-primary">About Us</p>
-          <p className="cursor-pointer hover:text-primary">
-            Delivery Information
-          </p>
-          <p className="cursor-pointer hover:text-primary">Privacy Policy</p>
-          <p className="cursor-pointer hover:text-primary">
-            Terms & Conditions
-          </p>
-          <p className="cursor-pointer hover:text-primary">Contact Us</p>
-          <p className="cursor-pointer hover:text-primary">Support Center</p>
-          <p className="cursor-pointer hover:text-primary">Careers</p>
+          <p className="footer-tags">About Us</p>
+          <p className="footer-tags">Delivery Information</p>
+          <p className="footer-tags">Privacy Policy</p>
+          <p className="footer-tags">Terms & Conditions</p>
+          <p className="footer-tags">Contact Us</p>
+          <p className="footer-tags">Support Center</p>
+          <p className="footer-tagsy">Careers</p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-bold font-quickSand">Account</h1>
-          <p className="cursor-pointer hover:text-primary">Sign In</p>
-          <p className="cursor-pointer hover:text-primary">View Cart</p>
-          <p className="cursor-pointer hover:text-primary">My Wishlist</p>
-          <p className="cursor-pointer hover:text-primary">Track My Order</p>
-          <p className="cursor-pointer hover:text-primary">Help Ticket</p>
-          <p className="cursor-pointer hover:text-primary">Shipping Details</p>
-          <p className="cursor-pointer hover:text-primary">Compare products</p>
+          <p className="footer-tags">Sign In</p>
+          <p className="footer-tags">View Cart</p>
+          <p className="footer-tags">My Wishlist</p>
+          <p className="footer-tags">Track My Order</p>
+          <p className="footer-tags">Help Ticket</p>
+          <p className="footer-tags">Shipping Details</p>
+          <p className="footer-tags">Compare products</p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-bold font-quickSand">Corporate</h1>
-          <p className="cursor-pointer hover:text-primary">Become a Vendor</p>
-          <p className="cursor-pointer hover:text-primary">Affiliate Program</p>
-          <p className="cursor-pointer hover:text-primary">Farm Business</p>
-          <p className="cursor-pointer hover:text-primary">Farm Careers</p>
-          <p className="cursor-pointer hover:text-primary">Our Suppliers</p>
-          <p className="cursor-pointer hover:text-primary">Accessibility</p>
-          <p className="cursor-pointer hover:text-primary">Promotions</p>
+          <p className="footer-tags">Become a Vendor</p>
+          <p className="footer-tags">Affiliate Program</p>
+          <p className="footer-tags">Farm Business</p>
+          <p className="footer-tags">Farm Careers</p>
+          <p className="footer-tags">Our Suppliers</p>
+          <p className="footer-tags">Accessibility</p>
+          <p className="footer-tags">Promotions</p>
         </div>
         <div className="flex flex-col gap-y-4">
           <h1 className="text-2xl font-bold font-quickSand">Popular</h1>
-          <p className="cursor-pointer hover:text-primary">
-            Milk and Flavored Milk
-          </p>
-          <p className="cursor-pointer hover:text-primary">
-            Butter and Margraine
-          </p>
-          <p className="cursor-pointer hover:text-primary">Eggs Substitutes</p>
-          <p className="cursor-pointer hover:text-primary">Marmalades</p>
-          <p className="cursor-pointer hover:text-primary">
-            Sour Cream and Dips
-          </p>
-          <p className="cursor-pointer hover:text-primary">Tea and Kombucha</p>
-          <p className="cursor-pointer hover:text-primary">Cheese</p>
+          <p className="footer-tags">Milk and Flavored Milk</p>
+          <p className="footer-tags">Butter and Margraine</p>
+          <p className="footer-tags">Eggs Substitutes</p>
+          <p className="footer-tags">Marmalades</p>
+          <p className="footer-tags">Sour Cream and Dips</p>
+          <p className="footer-tags">Tea and Kombucha</p>
+          <p className="footer-tags">Cheese</p>
         </div>
       </div>
       <div className="flex flex-col gap-y-3">

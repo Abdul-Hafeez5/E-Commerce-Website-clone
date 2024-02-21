@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { SiWindows11 } from "react-icons/si";
 import { PiCaretDown } from "react-icons/pi";
 import { CiFilter } from "react-icons/ci";
-import { Rating } from "primereact/rating";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
-// import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
 import Product from "../../Landing Page/components/Product";
 import {
@@ -33,7 +31,6 @@ import {
 } from "../../Landing Page/assets/Products/index";
 import Deals from "../../Landing Page/containers/Deals";
 import {
-  //   banner13,
   banner11,
   category1,
   category2,
@@ -44,6 +41,8 @@ import {
   thumbanil4,
   thumbanil5,
 } from "../Assets/Deals/index";
+import NewProduct from "../Component/NewProduct";
+import CategoryCard from "../Component/CategoryCard";
 
 let productList = [
   {
@@ -170,44 +169,6 @@ let DealProducts = [
   { img: thumbanil5, title: "Colorful Jacket", price: 25 },
 ];
 
-let NewProduct = ({ img, title, price }) => {
-  const [value, setValue] = useState(null);
-
-  return (
-    <div className="flex items-center py-2 border-b gap-x-3">
-      <div>
-        <img src={img} alt="" className="w-20 h-20" />
-      </div>
-      <div>
-        <h1 className="text-xl font-bold font-quickSand text-primary hover:text-yellow-400">
-          {title}
-        </h1>
-        <p className="text-base font-lato text-secondary">${price}</p>
-        <div className="flex mb-1 card gap-x-2">
-          <Rating
-            value={value}
-            onChange={(e) => setValue(e.value)}
-            cancel={false}
-            className="mx-1 text-yellow-300"
-          />
-          <span className="text-sm font-lato text-secondary">(3.5)</span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-let CategoryCard = ({ img, text }) => {
-  return (
-    <div className="flex items-center px-2 py-2 text-sm border rounded-lg font-lato gap-x-4">
-      <img src={img} alt="" className="justify-start w-8 h-8" />
-      <h1 className="flex flex-wrap flex-1">{text}</h1>
-      <p className="px-2 py-1 text-xs rounded-full justify-end bg-[#BCE3C9]">
-        0
-      </p>
-    </div>
-  );
-};
 const DealsCategories = () => {
   const [isListOpen, setIsListOpen] = useState(false);
   const [isSortOpen, setIsSortOpen] = useState(false);
@@ -246,15 +207,9 @@ const DealsCategories = () => {
                     <TiTick className="w-4 h-4 text-primary hover:text-white" />
                     <p>50</p>
                   </div>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    100
-                  </p>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    150
-                  </p>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    All
-                  </p>
+                  <p className="drop-list">100</p>
+                  <p className="drop-list">150</p>
+                  <p className="drop-list">All</p>
                 </div>
               )}
             </div>
@@ -272,18 +227,10 @@ const DealsCategories = () => {
                     <TiTick className="w-4 h-4 text-primary hover:text-white" />
                     <p>Featured</p>
                   </div>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    Price: Low to High
-                  </p>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    Price: High to low
-                  </p>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    Release Date
-                  </p>
-                  <p className="py-2 pl-6 hover:bg-primary hover:text-white">
-                    Avg. Rating
-                  </p>
+                  <p className="drop-list">Price: Low to High</p>
+                  <p className="drop-list">Price: High to low</p>
+                  <p className="drop-list">Release Date</p>
+                  <p className="drop-list">Avg. Rating</p>
                 </div>
               )}
             </div>
@@ -295,25 +242,15 @@ const DealsCategories = () => {
           ))}
         </div>
         <div className="flex items-center my-6 text-base font-bold gap-x-2 mxs:gap-x-4 font-quickSand">
-          <p className="flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
+          <p className="navigation-arrows">
             <FaArrowLeft />
           </p>
-          <p className="flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
-            1
-          </p>
-          <p className="flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
-            2
-          </p>
-          <p className="hidden mxs:flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
-            3
-          </p>
-          <p className="flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
-            ...
-          </p>
-          <p className="flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
-            6
-          </p>
-          <p className="flex items-center justify-center w-10 h-10 rounded-full text-secondary bg-[#f8f8f8] hover:text-white hover:bg-primary cursor-pointer">
+          <p className="navigation-arrows">1</p>
+          <p className="navigation-arrows">2</p>
+          <p className="navigation-arrows">3</p>
+          <p className="navigation-arrows">...</p>
+          <p className="navigation-arrows">6</p>
+          <p className="navigation-arrows">
             <FaArrowRight />
           </p>
         </div>
@@ -338,31 +275,31 @@ const DealsCategories = () => {
           <div className="flex flex-col gap-y-5">
             <div className="flex flex-col gap-y-1">
               <h1 className="text-sm font-bold font-lato">Color</h1>
-              <div className="flex items-center gap-x-3">
-                <input type="checkbox" className="w-3 h-3 bg-primary" />
+              <div className="checkbox-menu">
+                <input type="checkbox" className="checkbox-icons" />
                 <label htmlFor="">Red (56)</label>
               </div>
-              <div className="flex items-center gap-x-3">
-                <input type="checkbox" className="w-3 h-3 bg-primary" />
+              <div className="checkbox-menu">
+                <input type="checkbox" className="checkbox-icons" />
                 <label htmlFor="">Green (78)</label>
               </div>
-              <div className="flex items-center gap-x-3">
-                <input type="checkbox" className="w-3 h-3 bg-primary" />
+              <div className="checkbox-menu">
+                <input type="checkbox" className="checkbox-icons" />
                 <label htmlFor="">Blue (54)</label>
               </div>
             </div>
             <div className="flex flex-col gap-y-3">
               <h1 className="text-sm font-bold font-lato">Item Conditions</h1>
-              <div className="flex items-center gap-x-3">
-                <input type="checkbox" className="w-3 h-3 bg-primary" />
+              <div className="checkbox-menu">
+                <input type="checkbox" className="checkbox-icons" />
                 <label htmlFor="">New (1506)</label>
               </div>
-              <div className="flex items-center gap-x-3">
-                <input type="checkbox" className="w-3 h-3 bg-primary" />
+              <div className="checkbox-menu">
+                <input type="checkbox" className="checkbox-icons" />
                 <label htmlFor="">Refurnished (27)</label>
               </div>
-              <div className="flex items-center gap-x-3">
-                <input type="checkbox" className="w-3 h-3 bg-primary" />
+              <div className="checkbox-menu">
+                <input type="checkbox" className="checkbox-icons" />
                 <label htmlFor="">Used (45)</label>
               </div>
             </div>
@@ -390,11 +327,11 @@ const DealsCategories = () => {
         >
           <p className="text-sm font-lato text-secondary">Oganic</p>
           <div>
-            <h1 className="text-[18px] font-quickSand font-bold">Save 17%</h1>
-            <h1 className="text-[18px] font-quickSand font-bold">
+            <h1 className="heading-element">Save 17%</h1>
+            <h1 className="heading-element">
               on <span className="text-primary">Oganic</span>
             </h1>
-            <h1 className="text-[18px] font-quickSand font-bold">Juice</h1>
+            <h1 className="text-[18px]  font-quickSand font-bold">Juice</h1>
           </div>
         </div>
       </div>

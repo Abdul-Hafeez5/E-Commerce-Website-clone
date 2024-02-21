@@ -75,7 +75,7 @@ const BestSell = ({
         </div>
 
         <div className="my-3">
-          <div className="flex items-center font-bold font-quickSand gap-x-3">
+          <div className="font-bold  checkbox-menu font-quickSand">
             <p className="text-[18px]  text-primary ">${price}</p>
             <p className="relative text-sm line-through text-secondary">
               ${discount}
