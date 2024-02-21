@@ -43,3 +43,6 @@ body {
 .footer-tags {
   @apply cursor-pointer hover:text-primary
 }
+.nav-items {
+  @apply absolute z-10 w-48 bg-white border rounded-md shadow-lg text-secondary top-6
+}
