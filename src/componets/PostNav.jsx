@@ -51,13 +51,15 @@ const PostNav = () => {
           </Link>
           <li className="cursor-pointer hover:text-primary">About</li>
 
-          <DropdownNav title={"About"}>
-            <li>Shop1</li>
-            <li>Shop2</li>
-            <li>Shop3</li>
-            <li>Shop3</li>
-            <li>Shop4</li>
-          </DropdownNav>
+          <Link to="/deals">
+            <DropdownNav title={"Shop"}>
+              <li>Shop1</li>
+              <li>Shop2</li>
+              <li>Shop3</li>
+              <li>Shop3</li>
+              <li>Shop4</li>
+            </DropdownNav>
+          </Link>
 
           <DropdownNav title={"Vendors"}>
             <li>Vendor1</li>
