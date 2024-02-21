@@ -33,7 +33,7 @@ const DealsHeroSec = () => {
           <div className="transition-effect">
             <RxCross1 className="herosec-icons" /> <p>Cabbage</p>
           </div>
-          <div className="transition-effect">
+          <div className="text-black transition-effect hover:text-black">
             <RxCross1 className="herosec-icons" /> <p>Broccoli</p>
           </div>
           <div className="transition-effect">

@@ -24,7 +24,7 @@ const PostNav = () => {
 
   return (
     <div
-      className={`hidden lg:flex justify-between font-quickSand text-base font-bold bg-white items-center py-3 px-3  z-10 ${
+      className={`hidden lg:flex justify-between font-quickSand text-base font-bold bg-white items-center p-3  z-10 ${
         isNavFixed ? "fixed top-0 w-full" : ""
       }`}
     >
