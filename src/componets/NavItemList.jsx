@@ -65,7 +65,7 @@ const ItemList = () => {
         >
           Account
           {isAccountOpen && (
-            <div className="absolute z-10 text-sm text-black border rounded-md w-36 top-6 font-lato right-1">
+            <div className="absolute z-10 text-sm text-black bg-white border rounded-md w-36 top-6 font-lato right-1">
               <div className="flex flex-col items-center p-2 gap-y-3">
                 <div className="flex items-center gap-x-2">
                   <FiUser className="w-4 h-4" />

@@ -8,7 +8,7 @@ import NavItemList from "../componets/NavItemList";
 
 const Navbar = () => {
   return (
-    <div className="relative flex items-center justify-between px-2 py-5 shadow-md sm:p-4 ">
+    <div className="relative flex items-center justify-between px-2 py-5 shadow-md md:shadow-none sm:p-4 ">
       <div className="sm:order-2 lg:hidden">
         <IoMenuSharp className="w-5 h-5 mxs:h-7 mxs:w-7" />
       </div>
