@@ -7,12 +7,15 @@ const HeroAbout = () => {
   return (
     <>
       <HeroKeyword />
-      <div className="items-center justify-between mx-2 my-6 xs:mx-6 lg:flex gap-x-12">
-        <div
-          className=" w-[98%] lg:w-[6000px]  h-screen bg-center bg-cover rounded-xl my-6"
-          style={{ backgroundImage: `url('${about_1}')` }}
-        ></div>
-        <div className="flex flex-col gap-y-4">
+      <div className="flex flex-col items-center mx-2 my-6 lg:flex-row xs:mx-6 gap-x-12 gap-y-4">
+        <div className="w-[98%] lg:w-[50%] ">
+          <img
+            src={about_1}
+            alt=""
+            className="object-cover bg-center rounded-lg "
+          />
+        </div>
+        <div className="flex flex-col gap-y-16 lg:w-[50%]">
           <div className="flex flex-col gap-y-3">
             <h1 className="font-bold font-quickSand text-[40px] leading-[48px] lg:text-center">
               Welcome to Nest
@@ -31,7 +34,7 @@ const HeroAbout = () => {
               dolor in reprehenderit in voluptate id est laborum.
             </p>
           </div>
-          <div>
+          <div className="">
             <HeroCrousel />
           </div>
         </div>

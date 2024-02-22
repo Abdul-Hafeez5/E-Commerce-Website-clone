@@ -17,3 +17,4 @@ export { default as blog_6 } from "./blog-6.png";
 export { default as blog_7 } from "./blog-7.png";
 export { default as blog_14 } from "./blog-14.png";
 export { default as blog_15 } from "./blog-15.png";
+export { default as wave } from "./wave.png";
