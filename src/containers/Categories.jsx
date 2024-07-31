@@ -4,32 +4,9 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaArrowLeft } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa6";
-import {
-  cat1,
-  cat2,
-  cat3,
-  cat4,
-  cat5,
-  cat9,
-  cat11,
-  cat12,
-  cat13,
-  cat14,
-} from "../assets/Categories";
+import { CategoryList } from "../constants/constant";
 import Category from "../componets/Category";
 
-let CategoryList = [
-  { Name: "Peach", img: cat1, items: 14, bgColor: "#f2fce4" },
-  { Name: "Cake and Milk", img: cat2, items: 14, bgColor: "#fff3eb" },
-  { Name: "organic kiwi", img: cat3, items: 14, bgColor: "#f3e8e8" },
-  { Name: "Vegetables", img: cat4, items: 14, bgColor: "#f2fce4" },
-  { Name: "Strawberry", img: cat5, items: 14, bgColor: "#fff3eb" },
-  { Name: "Black Plum", img: cat9, items: 14, bgColor: "#f3e8e8" },
-  { Name: "Custard apple", img: cat11, items: 14, bgColor: "#f2fce4" },
-  { Name: "Peach", img: cat12, items: 14, bgColor: "#fff3eb" },
-  { Name: "Peach", img: cat13, items: 14, bgColor: "#f2fce4" },
-  { Name: "Peach", img: cat14, items: 14, bgColor: "#fff3eb" },
-];
 
 const Categories = () => {
   const swiperRef = useRef(null);

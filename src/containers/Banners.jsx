@@ -1,12 +1,5 @@
-import React from "react";
 import Banner from "../componets/Banner";
-import { banner1, banner2, banner3 } from "../assets/Cards";
-
-let BannerDetails = [
-  { title: "Everyday Fresh and clean with our Products", img: banner1 },
-  { title: "Make your Breakfast Healthy and Easy", img: banner2 },
-  { title: "The best Organic Products Online", img: banner3 },
-];
+import { BannerDetails } from "../constants/constant";
 
 const Banners = () => {
   return (

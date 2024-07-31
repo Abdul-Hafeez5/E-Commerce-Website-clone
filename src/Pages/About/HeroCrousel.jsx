@@ -51,10 +51,10 @@ const HeroCrousel = () => {
       <Swiper
         ref={swiperRef}
         loop={true}
-        // modules={[Autoplay, Mousewheel, Keyboard]}
-        // autoplay={{ delay: 2500 }}
-        // mousewheel={true}
-        // keyboard={true}
+        modules={[Autoplay, Mousewheel, Keyboard]}
+        autoplay={{ delay: 2500 }}
+        mousewheel={true}
+        keyboard={true}
         slidesPerView={1}
         spaceBetween={window.innerWidth >= 768 ? 15 : 10}
         breakpoints={{

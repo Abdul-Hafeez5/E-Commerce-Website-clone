@@ -34,7 +34,7 @@ const HeroAbout = () => {
               dolor in reprehenderit in voluptate id est laborum.
             </p>
           </div>
-          <div className="">
+          <div className="hidden lg:block">
             <HeroCrousel />
           </div>
         </div>
